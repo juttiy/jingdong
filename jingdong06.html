@@ -1,0 +1,4672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-ico" href="images/favicon.ico">
+	<link rel="stylesheet" href="jingdong02.css">
+  <script src="locationjson.js"></script>
+	<title>京东商城</title>
+</head>
+<body>
+	<!-- 顶部菜单 -->
+    <div id="top">
+       <div class="top_nav clearfix">
+	      <span>
+	        <img src="images/star.jpg" alt="收藏">
+	    	<a href="#">收藏京东</a>
+	      </span>
+	      <ul class="fright clearfix">
+	      	<li>您好！欢迎来到京东!&nbsp;<a href="">[登录]</a><a href="">[免费注册]</a></li>
+	      	<li><b></b><a href="">我的订单</a></li>
+	      	<li id="vip"><b></b><a href="">会员俱乐部</a></li>
+	      	<li id="dakehu"><b></b><a href="">企业频道</a></li>
+	      	<li id="app_jd" class="top_nav_li"><b></b><span><a href="">手机京东</a></span>
+               <ul>
+               	<li class="app_jd_li">
+               		"客户端下载" <p>zzzz</p><p>zzzz</p>
+               	</li>
+               	<li class="app_jd_li">
+               		 "京东钱包下载" <p>zzzz</p><p>zzzz</p>
+               	</li>
+               </ul>
+	      	</li>
+	      	<li class="top_nav_li"><b></b><a href="">客户服务</a>
+                  <ul>
+                  	<li><a href="#">帮助中心</a></li>
+                  	<li><a href="#">售后服务</a></li>
+                  	<li><a href="#">在线客服</a></li>
+                  	<li><a href="#">投诉中心</a></li>
+                  	<li><a href="#">客服邮箱</a></li>
+                  </ul>
+	      	</li>
+	      	<li class="top_nav_li"><b></b><a href="">网站导航</a>
+	      	<div>
+	      	<h2>特色栏目</h2>
+	      		<div>
+	      			<a href="">京东通信</a>
+	      			<a href="#">视频购物</a>
+	      			<a href="#">校园之星</a>
+	      			<a href="#">京东社区</a>
+	      			<a href="#">在线读书</a>
+	      			<a href="#">装机大师</a>
+	      			<a href="#">京东 E 卡</a>
+	      			<a href="#">家装城</a>
+	      			<a href="#">搭配购</a>
+	      			<a href="#">我喜欢</a>
+	      			<a href="#">游戏社区</a>
+	      		</div>
+	      		<h2>企业服务</h2>
+	      		<div>
+	      			<a href="#">企业采购</a>
+	      			<a href="#">办公直通车</a>
+	      		</div>
+	      		<h2>旗下网站</h2>
+	      		<div>
+	      			<a href="#">English Site</a>
+	      		</div>
+	      	</div>
+	      	</li>
+	      </ul>
+       </div>
+    	
+    </div>
+
+	<!-- 搜索和logo -->
+     <div id="logo_search" class="clearfix">
+     	<a href="#"><h1>上京东就够了</h1></a>
+     	<div class="search_box fleft">
+     		<div class="search_bar">
+     			<input type="text" name="search_text" id="search_text">
+     			<input type="button" name="search_btn" value="搜索">
+     		</div>
+     		<div class="hot_search">       
+     			<span>热门搜索：</span>
+     		    <a href="">家纺11大促</a>
+     		    <a href="">彩虹电热毯</a>
+     		    <a href="">博洋家纺</a>
+     		    <a href="">霞诊</a>
+     		    <a href="">床褥床垫</a>
+            <a href="">九州鹿被子</a>
+     		    <a href="">南极人家纺</a>
+     		</div>
+        <div class="about_search clearfix" id="about_search">
+          <ul>
+           <li><a href="">卫衣</a><span>约1120件商品</span></li>
+           <li><a href="">卫裤</a><span>约1120件商品</span></li>
+           <li><a href="">卫帽</a><span>约1120件商品</span></li>
+           <li><a href="">卫浴</a><span>约1120件商品</span></li>
+           <li><a href="">卫生纸</a><span>约1120件商品</span></li>
+           <li><a href="">卫生纸.套装</a><span>约1120件商品</span></li>
+            <li><a href="" class="fleft">卫衣.男</a><span>约1120件商品</span></li>
+          </ul>
+        </div>
+     	</div>
+      <div class="my_buy fleft clearfix">
+        <div class="my_jd fleft" onmouseover ="showHide('my_jd_drow','block')" onmouseout ="showHide('my_jd_drow','none')">
+          <div>
+          我的京东
+          <span></span></div>
+          <div id="my_jd_drow">你还未登录！<a href="javascript:;">登录</a><a href="javascript:;">注册</a></div>
+        </div>
+        <div class="buy_car fleft" onmouseover ="showHide('buy_car_drow','block')" onmouseout ="showHide('buy_car_drow','none')">
+          <div>
+          去购物车结算
+          <span></span>
+          </div>
+          <!-- <i>0</i> -->
+          <div id="buy_car_drow">你还未添加商品，请先浏览</div>
+        </div>
+      </div>
+     </div>
+
+	<!-- 导航栏 -->
+     <div id="main_nav" class="clearfix">
+     	<div class="nav">
+        <div id="nav">
+          <a href="">全部商品分类</a>
+          <span></span>
+        </div>
+        <div id="all_list">
+          <ul class="all_list">
+            <li><a href="">图书、音像、数字商品</a><span></span></li>
+            <li><a href="">家用电器</a><span></span></li>
+            <li><a href="">手机、数码、京东通信</a><span></span></li>
+            <li><a href="">电脑、办公</a><span></span></li>
+            <li><a href="">家居、家具、家装、厨具</a><span></span></li>
+            <li><a href="">男装、女装、内衣、珠宝</a><span></span></li>
+            <li><a href="">个护化妆</a><span></span></li>
+            <li><a href="">鞋靴、箱包、钟表、奢侈品</a><span></span></li>
+            <li><a href="">运动户外</a><span></span></li>
+            <li><a href="">整车、汽车用品</a><span></span></li>
+            <li><a href="">母婴、玩具乐器</a><span></span></li>
+            <li><a href="">食品饮料、酒类、生鲜</a><span></span></li>
+            <li><a href="">营养保健</a><span></span></li>
+            <li><a href="">彩票、旅行、充值、票务</a><span></span></li>
+          </ul>
+          <div class="list_detail">
+            <div class="clearfix">
+              <ul>
+                <li><span><a href="javascript:;">音像</a></span>
+                    <a href="javascript:;">音乐</a>
+                    <a href="javascript:;">影视</a>
+                    <a href="javascript:;">教育音像</a>
+                    <a href="javascript:;">游戏</a>
+                    <a href="javascript:;">影视/动漫周边</a>
+                </li>
+                <li><span><a href="javascript:;">少儿</a></span>
+                    <a href="javascript:;">0-2岁</a>
+                    <a href="javascript:;">3-6岁</a>
+                    <a href="javascript:;">7-10岁</a>
+                    <a href="javascript:;">11-14岁</a>
+                    <a href="javascript:;">绘本科普</a>
+                    <a href="javascript:;">儿童文学</a>
+                    <a href="javascript:;">幼儿启蒙</a>
+                    <a href="javascript:;">手工游戏</a>
+                    <a href="javascript:;">智力开发</a>
+                </li>
+                <li><span><a href="javascript:;">教育</a></span>
+                    <a href="javascript:;">教材</a>
+                    <a href="javascript:;">中小学教辅</a>
+                    <a href="javascript:;">考试</a>
+                    <a href="javascript:;">外语学习</a>
+                    <a href="javascript:;">字典词典</a>
+                </li>
+                <li><span><a href="javascript:;">文艺</a></span>
+                    <a href="javascript:;">小说文学</a>
+                    <a href="javascript:;">青春文学</a>
+                    <a href="javascript:;">传记</a>
+                    <a href="javascript:;">动漫</a>
+                    <a href="javascript:;">艺术摄影</a>
+                </li>
+                <li><span><a href="javascript:;">经管励志</a></span>
+                    <a href="javascript:;">管理</a>
+                    <a href="javascript:;">金融与投资</a>
+                    <a href="javascript:;">经济</a>
+                    <a href="javascript:;">励志与成功</a>
+                </li>
+                <li><span><a href="javascript:;">人文社</a></span>
+                    <a href="javascript:;">历史</a>
+                    <a href="javascript:;">心理学</a>
+                    <a href="javascript:;">政治/军事</a>
+                    <a href="javascript:;">国学/古籍</a>
+                    <a href="javascript:;">哲学/宗教</a>
+                    <a href="javascript:;">社会科学</a>
+                    <a href="javascript:;">法律文化</a>
+                </li>
+                <li><span><a href="javascript:;">生活</a></span>
+                    <a href="javascript:;">孕产</a>
+                    <a href="javascript:;">健身保健</a>
+                    <a href="javascript:;">旅游/地图</a>
+                    <a href="javascript:;">美食时尚</a>
+                    <a href="javascript:;">美妆家居</a>
+                    <a href="javascript:;">手工DIY</a>
+                    <a href="javascript:;">两性体育</a>
+                </li>
+                <li><span><a href="javascript:;">科技</a></span>
+                    <a href="javascript:;">计算机与互联网科普</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">技术电子/通信</a>
+                    <a href="javascript:;">医学</a>
+                    <a href="javascript:;">科学与自然农林</a>
+                </li>
+                <li><span><a href="javascript:;">刊/原版</a></span>
+                    <a href="javascript:;">杂志/期刊</a>
+                    <a href="javascript:;">英文原版书</a>
+                    <a href="javascript:;">港台图书</a>
+                </li>
+                <li><span><a href="javascript:;">电子书</a></span>
+                    <a href="javascript:;">畅读VIP</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">励志与成功</a>
+                    <a href="javascript:;">小说</a>
+                    <a href="javascript:;">经济金融</a>
+                    <a href="javascript:;">文学社科</a>
+                    <a href="javascript:;">婚恋两性</a>
+                    <a href="javascript:;">外文原版</a>
+                    <a href="javascript:;">免费</a>
+                </li>
+                <li><span><a href="javascript:;">数字音乐</a></span>
+                    <a href="javascript:;">通俗流行</a>
+                    <a href="javascript:;">古典音乐</a>
+                    <a href="javascript:;">摇滚</a>
+                    <a href="javascript:;">说唱</a>
+                    <a href="javascript:;">爵士蓝调</a>
+                    <a href="javascript:;">乡村民谣</a>
+                    <a href="javascript:;">有声读物</a
+                </li>
+              </ul>
+              <div class="list_img">
+                <div>
+                  <img src="images/tushulogo1.jpg" alt="">
+                  <img src="images/tushulogo2.jpg" alt="">
+                  <img src="images/tushulogo3.jpg" alt="">
+                  <img src="images/tushulogo4.jpg" alt="">
+                  <img src="images/tushulogo5.jpg" alt="">
+                  <img src="images/tushulogo6.jpg" alt="">
+                  <img src="images/tushulogo7.jpg" alt="">
+                  <img src="images/tushulogo8.jpg" alt="">
+                </div>
+                <img src="images/tushu2.jpg" alt="">
+                <img src="images/tushu3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="list_detail">
+            <div class="clearfix">
+              <ul>
+                <li><span><a href="javascript:;">大家电</a></span>
+                    <a href="javascript:;">平板电视</a>
+                    <a href="javascript:;">空调</a>
+                    <a href="javascript:;">冰箱</a>
+                    <a href="javascript:;">洗衣机</a>
+                    <a href="javascript:;">家庭影院DVD</a>
+                    <a href="javascript:;">迷你音响</a>
+                    <a href="javascript:;">冷柜/冰吧</a>
+                    <a href="javascript:;">酒柜</a>
+                    <a href="javascript:;">家电配件</a>
+                </li>
+                <li><span><a href="javascript:;">厨卫大电</a></span>
+                    <a href="javascript:;">油烟机</a>
+                    <a href="javascript:;">燃气灶烟灶</a>
+                    <a href="javascript:;">套装消毒柜</a>
+                    <a href="javascript:;">洗碗机</a>
+                    <a href="javascript:;">电热水器</a>
+                    <a href="javascript:;">燃气热水器</a>
+                    <a href="javascript:;">嵌入式厨电</a>
+                    <a href="javascript:;">手工游戏</a>
+                    <a href="javascript:;">智力开发</a>
+                </li>
+                <li><span><a href="javascript:;">厨房小电</a></span>
+                    <a href="javascript:;">电饭煲</a>
+                    <a href="javascript:;">微波炉</a>
+                    <a href="javascript:;">电烤箱</a>
+                    <a href="javascript:;">电磁炉</a>
+                    <a href="javascript:;">电压力锅</a>
+                </li>
+                <li><span><a href="javascript:;">生活电器</a></span>
+                    <a href="javascript:;">电风扇</a>
+                    <a href="javascript:;">冷风扇</a>
+                    <a href="javascript:;">吸尘器</a>
+                    <a href="javascript:;">净化器</a>
+                    <a href="javascript:;">豆浆机</a>
+                </li>
+                <li><span><a href="javascript:;">咖啡机</a></span>
+                    <a href="javascript:;">面包机</a>
+                    <a href="javascript:;">榨汁机</a>
+                    <a href="javascript:;">电饼铛</a>
+                    <a href="javascript:;">料理机</a>
+                </li>
+                <li><span><a href="javascript:;">人文社</a></span>
+                    <a href="javascript:;">历史</a>
+                    <a href="javascript:;">心理学</a>
+                    <a href="javascript:;">政治/军事</a>
+                    <a href="javascript:;">国学/古籍</a>
+                    <a href="javascript:;">哲学/宗教</a>
+                    <a href="javascript:;">社会科学</a>
+                    <a href="javascript:;">法律文化</a>
+                </li>
+                <li><span><a href="javascript:;">生活</a></span>
+                    <a href="javascript:;">孕产</a>
+                    <a href="javascript:;">健身保健</a>
+                    <a href="javascript:;">旅游/地图</a>
+                    <a href="javascript:;">美食时尚</a>
+                    <a href="javascript:;">美妆家居</a>
+                    <a href="javascript:;">手工DIY</a>
+                    <a href="javascript:;">两性体育</a>
+                </li>
+                <li><span><a href="javascript:;">科技</a></span>
+                    <a href="javascript:;">计算机与互联网科普</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">技术电子/通信</a>
+                    <a href="javascript:;">医学</a>
+                    <a href="javascript:;">科学与自然农林</a>
+                </li>
+                <li><span><a href="javascript:;">刊/原版</a></span>
+                    <a href="javascript:;">杂志/期刊</a>
+                    <a href="javascript:;">英文原版书</a>
+                    <a href="javascript:;">港台图书</a>
+                </li>
+                <li><span><a href="javascript:;">电子书</a></span>
+                    <a href="javascript:;">畅读VIP</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">励志与成功</a>
+                    <a href="javascript:;">小说</a>
+                    <a href="javascript:;">经济金融</a>
+                    <a href="javascript:;">文学社科</a>
+                    <a href="javascript:;">婚恋两性</a>
+                    <a href="javascript:;">外文原版</a>
+                    <a href="javascript:;">免费</a>
+                </li>
+                <li><span><a href="javascript:;">数字音乐</a></span>
+                    <a href="javascript:;">通俗流行</a>
+                    <a href="javascript:;">古典音乐</a>
+                    <a href="javascript:;">摇滚</a>
+                    <a href="javascript:;">说唱</a>
+                    <a href="javascript:;">爵士蓝调</a>
+                    <a href="javascript:;">乡村民谣</a>
+                    <a href="javascript:;">有声读物</a
+                </li>
+              </ul>
+              <div class="list_img">
+                <div>
+                  <img src="images/jiadianlogo1.jpg" alt="">
+                  <img src="images/jiadianlogo2.jpg" alt="">
+                  <img src="images/jiadianlogo3.jpg" alt="">
+                  <img src="images/jiadianlogo4.jpg" alt="">
+                  <img src="images/jiadianlogo5.jpg" alt="">
+                  <img src="images/jiadianlogo6.jpg" alt="">
+                  <img src="images/jiadianlogo7.jpg" alt="">
+                  <img src="images/jiadianlogo8.jpg" alt="">
+                </div>
+                <img src="images/jiadian2.jpg" alt="">
+                <img src="images/jiadian3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="list_detail">
+            <div class="clearfix">
+              <ul>
+                <li><span><a href="javascript:;">音像</a></span>
+                    <a href="javascript:;">音乐</a>
+                    <a href="javascript:;">影视</a>
+                    <a href="javascript:;">教育音像</a>
+                    <a href="javascript:;">游戏</a>
+                    <a href="javascript:;">影视/动漫周边</a>
+                </li>
+                <li><span><a href="javascript:;">少儿</a></span>
+                    <a href="javascript:;">0-2岁</a>
+                    <a href="javascript:;">3-6岁</a>
+                    <a href="javascript:;">7-10岁</a>
+                    <a href="javascript:;">11-14岁</a>
+                    <a href="javascript:;">绘本科普</a>
+                    <a href="javascript:;">儿童文学</a>
+                    <a href="javascript:;">幼儿启蒙</a>
+                    <a href="javascript:;">手工游戏</a>
+                    <a href="javascript:;">智力开发</a>
+                </li>
+                <li><span><a href="javascript:;">教育</a></span>
+                    <a href="javascript:;">教材</a>
+                    <a href="javascript:;">中小学教辅</a>
+                    <a href="javascript:;">考试</a>
+                    <a href="javascript:;">外语学习</a>
+                    <a href="javascript:;">字典词典</a>
+                </li>
+                <li><span><a href="javascript:;">文艺</a></span>
+                    <a href="javascript:;">小说文学</a>
+                    <a href="javascript:;">青春文学</a>
+                    <a href="javascript:;">传记</a>
+                    <a href="javascript:;">动漫</a>
+                    <a href="javascript:;">艺术摄影</a>
+                </li>
+                <li><span><a href="javascript:;">经管励志</a></span>
+                    <a href="javascript:;">管理</a>
+                    <a href="javascript:;">金融与投资</a>
+                    <a href="javascript:;">经济</a>
+                    <a href="javascript:;">励志与成功</a>
+                </li>
+                <li><span><a href="javascript:;">人文社</a></span>
+                    <a href="javascript:;">历史</a>
+                    <a href="javascript:;">心理学</a>
+                    <a href="javascript:;">政治/军事</a>
+                    <a href="javascript:;">国学/古籍</a>
+                    <a href="javascript:;">哲学/宗教</a>
+                    <a href="javascript:;">社会科学</a>
+                    <a href="javascript:;">法律文化</a>
+                </li>
+                <li><span><a href="javascript:;">生活</a></span>
+                    <a href="javascript:;">孕产</a>
+                    <a href="javascript:;">健身保健</a>
+                    <a href="javascript:;">旅游/地图</a>
+                    <a href="javascript:;">美食时尚</a>
+                    <a href="javascript:;">美妆家居</a>
+                    <a href="javascript:;">手工DIY</a>
+                    <a href="javascript:;">两性体育</a>
+                </li>
+                <li><span><a href="javascript:;">科技</a></span>
+                    <a href="javascript:;">计算机与互联网科普</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">技术电子/通信</a>
+                    <a href="javascript:;">医学</a>
+                    <a href="javascript:;">科学与自然农林</a>
+                </li>
+                <li><span><a href="javascript:;">刊/原版</a></span>
+                    <a href="javascript:;">杂志/期刊</a>
+                    <a href="javascript:;">英文原版书</a>
+                    <a href="javascript:;">港台图书</a>
+                </li>
+                <li><span><a href="javascript:;">电子书</a></span>
+                    <a href="javascript:;">畅读VIP</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">励志与成功</a>
+                    <a href="javascript:;">小说</a>
+                    <a href="javascript:;">经济金融</a>
+                    <a href="javascript:;">文学社科</a>
+                    <a href="javascript:;">婚恋两性</a>
+                    <a href="javascript:;">外文原版</a>
+                    <a href="javascript:;">免费</a>
+                </li>
+                <li><span><a href="javascript:;">数字音乐</a></span>
+                    <a href="javascript:;">通俗流行</a>
+                    <a href="javascript:;">古典音乐</a>
+                    <a href="javascript:;">摇滚</a>
+                    <a href="javascript:;">说唱</a>
+                    <a href="javascript:;">爵士蓝调</a>
+                    <a href="javascript:;">乡村民谣</a>
+                    <a href="javascript:;">有声读物</a
+                </li>
+              </ul>
+              <div class="list_img">
+                <div>
+                  <img src="images/tushulogo1.jpg" alt="">
+                  <img src="images/tushulogo2.jpg" alt="">
+                  <img src="images/tushulogo3.jpg" alt="">
+                  <img src="images/tushulogo4.jpg" alt="">
+                  <img src="images/tushulogo5.jpg" alt="">
+                  <img src="images/tushulogo6.jpg" alt="">
+                  <img src="images/tushulogo7.jpg" alt="">
+                  <img src="images/tushulogo8.jpg" alt="">
+                </div>
+                <img src="images/tushu2.jpg" alt="">
+                <img src="images/tushu3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="list_detail">
+            <div class="clearfix">
+              <ul>
+                <li><span><a href="javascript:;">音像</a></span>
+                    <a href="javascript:;">音乐</a>
+                    <a href="javascript:;">影视</a>
+                    <a href="javascript:;">教育音像</a>
+                    <a href="javascript:;">游戏</a>
+                    <a href="javascript:;">影视/动漫周边</a>
+                </li>
+                <li><span><a href="javascript:;">少儿</a></span>
+                    <a href="javascript:;">0-2岁</a>
+                    <a href="javascript:;">3-6岁</a>
+                    <a href="javascript:;">7-10岁</a>
+                    <a href="javascript:;">11-14岁</a>
+                    <a href="javascript:;">绘本科普</a>
+                    <a href="javascript:;">儿童文学</a>
+                    <a href="javascript:;">幼儿启蒙</a>
+                    <a href="javascript:;">手工游戏</a>
+                    <a href="javascript:;">智力开发</a>
+                </li>
+                <li><span><a href="javascript:;">教育</a></span>
+                    <a href="javascript:;">教材</a>
+                    <a href="javascript:;">中小学教辅</a>
+                    <a href="javascript:;">考试</a>
+                    <a href="javascript:;">外语学习</a>
+                    <a href="javascript:;">字典词典</a>
+                </li>
+                <li><span><a href="javascript:;">文艺</a></span>
+                    <a href="javascript:;">小说文学</a>
+                    <a href="javascript:;">青春文学</a>
+                    <a href="javascript:;">传记</a>
+                    <a href="javascript:;">动漫</a>
+                    <a href="javascript:;">艺术摄影</a>
+                </li>
+                <li><span><a href="javascript:;">经管励志</a></span>
+                    <a href="javascript:;">管理</a>
+                    <a href="javascript:;">金融与投资</a>
+                    <a href="javascript:;">经济</a>
+                    <a href="javascript:;">励志与成功</a>
+                </li>
+                <li><span><a href="javascript:;">人文社</a></span>
+                    <a href="javascript:;">历史</a>
+                    <a href="javascript:;">心理学</a>
+                    <a href="javascript:;">政治/军事</a>
+                    <a href="javascript:;">国学/古籍</a>
+                    <a href="javascript:;">哲学/宗教</a>
+                    <a href="javascript:;">社会科学</a>
+                    <a href="javascript:;">法律文化</a>
+                </li>
+                <li><span><a href="javascript:;">生活</a></span>
+                    <a href="javascript:;">孕产</a>
+                    <a href="javascript:;">健身保健</a>
+                    <a href="javascript:;">旅游/地图</a>
+                    <a href="javascript:;">美食时尚</a>
+                    <a href="javascript:;">美妆家居</a>
+                    <a href="javascript:;">手工DIY</a>
+                    <a href="javascript:;">两性体育</a>
+                </li>
+                <li><span><a href="javascript:;">科技</a></span>
+                    <a href="javascript:;">计算机与互联网科普</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">技术电子/通信</a>
+                    <a href="javascript:;">医学</a>
+                    <a href="javascript:;">科学与自然农林</a>
+                </li>
+                <li><span><a href="javascript:;">刊/原版</a></span>
+                    <a href="javascript:;">杂志/期刊</a>
+                    <a href="javascript:;">英文原版书</a>
+                    <a href="javascript:;">港台图书</a>
+                </li>
+                <li><span><a href="javascript:;">电子书</a></span>
+                    <a href="javascript:;">畅读VIP</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">励志与成功</a>
+                    <a href="javascript:;">小说</a>
+                    <a href="javascript:;">经济金融</a>
+                    <a href="javascript:;">文学社科</a>
+                    <a href="javascript:;">婚恋两性</a>
+                    <a href="javascript:;">外文原版</a>
+                    <a href="javascript:;">免费</a>
+                </li>
+                <li><span><a href="javascript:;">数字音乐</a></span>
+                    <a href="javascript:;">通俗流行</a>
+                    <a href="javascript:;">古典音乐</a>
+                    <a href="javascript:;">摇滚</a>
+                    <a href="javascript:;">说唱</a>
+                    <a href="javascript:;">爵士蓝调</a>
+                    <a href="javascript:;">乡村民谣</a>
+                    <a href="javascript:;">有声读物</a
+                </li>
+              </ul>
+              <div class="list_img">
+                <div>
+                  <img src="images/tushulogo1.jpg" alt="">
+                  <img src="images/tushulogo2.jpg" alt="">
+                  <img src="images/tushulogo3.jpg" alt="">
+                  <img src="images/tushulogo4.jpg" alt="">
+                  <img src="images/tushulogo5.jpg" alt="">
+                  <img src="images/tushulogo6.jpg" alt="">
+                  <img src="images/tushulogo7.jpg" alt="">
+                  <img src="images/tushulogo8.jpg" alt="">
+                </div>
+                <img src="images/tushu2.jpg" alt="">
+                <img src="images/tushu3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="list_detail">
+            <div class="clearfix">
+              <ul>
+                <li><span><a href="javascript:;">音像</a></span>
+                    <a href="javascript:;">音乐</a>
+                    <a href="javascript:;">影视</a>
+                    <a href="javascript:;">教育音像</a>
+                    <a href="javascript:;">游戏</a>
+                    <a href="javascript:;">影视/动漫周边</a>
+                </li>
+                <li><span><a href="javascript:;">少儿</a></span>
+                    <a href="javascript:;">0-2岁</a>
+                    <a href="javascript:;">3-6岁</a>
+                    <a href="javascript:;">7-10岁</a>
+                    <a href="javascript:;">11-14岁</a>
+                    <a href="javascript:;">绘本科普</a>
+                    <a href="javascript:;">儿童文学</a>
+                    <a href="javascript:;">幼儿启蒙</a>
+                    <a href="javascript:;">手工游戏</a>
+                    <a href="javascript:;">智力开发</a>
+                </li>
+                <li><span><a href="javascript:;">教育</a></span>
+                    <a href="javascript:;">教材</a>
+                    <a href="javascript:;">中小学教辅</a>
+                    <a href="javascript:;">考试</a>
+                    <a href="javascript:;">外语学习</a>
+                    <a href="javascript:;">字典词典</a>
+                </li>
+                <li><span><a href="javascript:;">文艺</a></span>
+                    <a href="javascript:;">小说文学</a>
+                    <a href="javascript:;">青春文学</a>
+                    <a href="javascript:;">传记</a>
+                    <a href="javascript:;">动漫</a>
+                    <a href="javascript:;">艺术摄影</a>
+                </li>
+                <li><span><a href="javascript:;">经管励志</a></span>
+                    <a href="javascript:;">管理</a>
+                    <a href="javascript:;">金融与投资</a>
+                    <a href="javascript:;">经济</a>
+                    <a href="javascript:;">励志与成功</a>
+                </li>
+                <li><span><a href="javascript:;">人文社</a></span>
+                    <a href="javascript:;">历史</a>
+                    <a href="javascript:;">心理学</a>
+                    <a href="javascript:;">政治/军事</a>
+                    <a href="javascript:;">国学/古籍</a>
+                    <a href="javascript:;">哲学/宗教</a>
+                    <a href="javascript:;">社会科学</a>
+                    <a href="javascript:;">法律文化</a>
+                </li>
+                <li><span><a href="javascript:;">生活</a></span>
+                    <a href="javascript:;">孕产</a>
+                    <a href="javascript:;">健身保健</a>
+                    <a href="javascript:;">旅游/地图</a>
+                    <a href="javascript:;">美食时尚</a>
+                    <a href="javascript:;">美妆家居</a>
+                    <a href="javascript:;">手工DIY</a>
+                    <a href="javascript:;">两性体育</a>
+                </li>
+                <li><span><a href="javascript:;">科技</a></span>
+                    <a href="javascript:;">计算机与互联网科普</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">技术电子/通信</a>
+                    <a href="javascript:;">医学</a>
+                    <a href="javascript:;">科学与自然农林</a>
+                </li>
+                <li><span><a href="javascript:;">刊/原版</a></span>
+                    <a href="javascript:;">杂志/期刊</a>
+                    <a href="javascript:;">英文原版书</a>
+                    <a href="javascript:;">港台图书</a>
+                </li>
+                <li><span><a href="javascript:;">电子书</a></span>
+                    <a href="javascript:;">畅读VIP</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">励志与成功</a>
+                    <a href="javascript:;">小说</a>
+                    <a href="javascript:;">经济金融</a>
+                    <a href="javascript:;">文学社科</a>
+                    <a href="javascript:;">婚恋两性</a>
+                    <a href="javascript:;">外文原版</a>
+                    <a href="javascript:;">免费</a>
+                </li>
+                <li><span><a href="javascript:;">数字音乐</a></span>
+                    <a href="javascript:;">通俗流行</a>
+                    <a href="javascript:;">古典音乐</a>
+                    <a href="javascript:;">摇滚</a>
+                    <a href="javascript:;">说唱</a>
+                    <a href="javascript:;">爵士蓝调</a>
+                    <a href="javascript:;">乡村民谣</a>
+                    <a href="javascript:;">有声读物</a
+                </li>
+              </ul>
+              <div class="list_img">
+                <div>
+                  <img src="images/tushulogo1.jpg" alt="">
+                  <img src="images/tushulogo2.jpg" alt="">
+                  <img src="images/tushulogo3.jpg" alt="">
+                  <img src="images/tushulogo4.jpg" alt="">
+                  <img src="images/tushulogo5.jpg" alt="">
+                  <img src="images/tushulogo6.jpg" alt="">
+                  <img src="images/tushulogo7.jpg" alt="">
+                  <img src="images/tushulogo8.jpg" alt="">
+                </div>
+                <img src="images/tushu2.jpg" alt="">
+                <img src="images/tushu3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="list_detail">
+            <div class="clearfix">
+              <ul>
+                <li><span><a href="javascript:;">音像</a></span>
+                    <a href="javascript:;">音乐</a>
+                    <a href="javascript:;">影视</a>
+                    <a href="javascript:;">教育音像</a>
+                    <a href="javascript:;">游戏</a>
+                    <a href="javascript:;">影视/动漫周边</a>
+                </li>
+                <li><span><a href="javascript:;">少儿</a></span>
+                    <a href="javascript:;">0-2岁</a>
+                    <a href="javascript:;">3-6岁</a>
+                    <a href="javascript:;">7-10岁</a>
+                    <a href="javascript:;">11-14岁</a>
+                    <a href="javascript:;">绘本科普</a>
+                    <a href="javascript:;">儿童文学</a>
+                    <a href="javascript:;">幼儿启蒙</a>
+                    <a href="javascript:;">手工游戏</a>
+                    <a href="javascript:;">智力开发</a>
+                </li>
+                <li><span><a href="javascript:;">教育</a></span>
+                    <a href="javascript:;">教材</a>
+                    <a href="javascript:;">中小学教辅</a>
+                    <a href="javascript:;">考试</a>
+                    <a href="javascript:;">外语学习</a>
+                    <a href="javascript:;">字典词典</a>
+                </li>
+                <li><span><a href="javascript:;">文艺</a></span>
+                    <a href="javascript:;">小说文学</a>
+                    <a href="javascript:;">青春文学</a>
+                    <a href="javascript:;">传记</a>
+                    <a href="javascript:;">动漫</a>
+                    <a href="javascript:;">艺术摄影</a>
+                </li>
+                <li><span><a href="javascript:;">经管励志</a></span>
+                    <a href="javascript:;">管理</a>
+                    <a href="javascript:;">金融与投资</a>
+                    <a href="javascript:;">经济</a>
+                    <a href="javascript:;">励志与成功</a>
+                </li>
+                <li><span><a href="javascript:;">人文社</a></span>
+                    <a href="javascript:;">历史</a>
+                    <a href="javascript:;">心理学</a>
+                    <a href="javascript:;">政治/军事</a>
+                    <a href="javascript:;">国学/古籍</a>
+                    <a href="javascript:;">哲学/宗教</a>
+                    <a href="javascript:;">社会科学</a>
+                    <a href="javascript:;">法律文化</a>
+                </li>
+                <li><span><a href="javascript:;">生活</a></span>
+                    <a href="javascript:;">孕产</a>
+                    <a href="javascript:;">健身保健</a>
+                    <a href="javascript:;">旅游/地图</a>
+                    <a href="javascript:;">美食时尚</a>
+                    <a href="javascript:;">美妆家居</a>
+                    <a href="javascript:;">手工DIY</a>
+                    <a href="javascript:;">两性体育</a>
+                </li>
+                <li><span><a href="javascript:;">科技</a></span>
+                    <a href="javascript:;">计算机与互联网科普</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">技术电子/通信</a>
+                    <a href="javascript:;">医学</a>
+                    <a href="javascript:;">科学与自然农林</a>
+                </li>
+                <li><span><a href="javascript:;">刊/原版</a></span>
+                    <a href="javascript:;">杂志/期刊</a>
+                    <a href="javascript:;">英文原版书</a>
+                    <a href="javascript:;">港台图书</a>
+                </li>
+                <li><span><a href="javascript:;">电子书</a></span>
+                    <a href="javascript:;">畅读VIP</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">励志与成功</a>
+                    <a href="javascript:;">小说</a>
+                    <a href="javascript:;">经济金融</a>
+                    <a href="javascript:;">文学社科</a>
+                    <a href="javascript:;">婚恋两性</a>
+                    <a href="javascript:;">外文原版</a>
+                    <a href="javascript:;">免费</a>
+                </li>
+                <li><span><a href="javascript:;">数字音乐</a></span>
+                    <a href="javascript:;">通俗流行</a>
+                    <a href="javascript:;">古典音乐</a>
+                    <a href="javascript:;">摇滚</a>
+                    <a href="javascript:;">说唱</a>
+                    <a href="javascript:;">爵士蓝调</a>
+                    <a href="javascript:;">乡村民谣</a>
+                    <a href="javascript:;">有声读物</a
+                </li>
+              </ul>
+              <div class="list_img">
+                <div>
+                  <img src="images/tushulogo1.jpg" alt="">
+                  <img src="images/tushulogo2.jpg" alt="">
+                  <img src="images/tushulogo3.jpg" alt="">
+                  <img src="images/tushulogo4.jpg" alt="">
+                  <img src="images/tushulogo5.jpg" alt="">
+                  <img src="images/tushulogo6.jpg" alt="">
+                  <img src="images/tushulogo7.jpg" alt="">
+                  <img src="images/tushulogo8.jpg" alt="">
+                </div>
+                <img src="images/tushu2.jpg" alt="">
+                <img src="images/tushu3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="list_detail">
+            <div class="clearfix">
+              <ul>
+                <li><span><a href="javascript:;">音像</a></span>
+                    <a href="javascript:;">音乐</a>
+                    <a href="javascript:;">影视</a>
+                    <a href="javascript:;">教育音像</a>
+                    <a href="javascript:;">游戏</a>
+                    <a href="javascript:;">影视/动漫周边</a>
+                </li>
+                <li><span><a href="javascript:;">少儿</a></span>
+                    <a href="javascript:;">0-2岁</a>
+                    <a href="javascript:;">3-6岁</a>
+                    <a href="javascript:;">7-10岁</a>
+                    <a href="javascript:;">11-14岁</a>
+                    <a href="javascript:;">绘本科普</a>
+                    <a href="javascript:;">儿童文学</a>
+                    <a href="javascript:;">幼儿启蒙</a>
+                    <a href="javascript:;">手工游戏</a>
+                    <a href="javascript:;">智力开发</a>
+                </li>
+                <li><span><a href="javascript:;">教育</a></span>
+                    <a href="javascript:;">教材</a>
+                    <a href="javascript:;">中小学教辅</a>
+                    <a href="javascript:;">考试</a>
+                    <a href="javascript:;">外语学习</a>
+                    <a href="javascript:;">字典词典</a>
+                </li>
+                <li><span><a href="javascript:;">文艺</a></span>
+                    <a href="javascript:;">小说文学</a>
+                    <a href="javascript:;">青春文学</a>
+                    <a href="javascript:;">传记</a>
+                    <a href="javascript:;">动漫</a>
+                    <a href="javascript:;">艺术摄影</a>
+                </li>
+                <li><span><a href="javascript:;">经管励志</a></span>
+                    <a href="javascript:;">管理</a>
+                    <a href="javascript:;">金融与投资</a>
+                    <a href="javascript:;">经济</a>
+                    <a href="javascript:;">励志与成功</a>
+                </li>
+                <li><span><a href="javascript:;">人文社</a></span>
+                    <a href="javascript:;">历史</a>
+                    <a href="javascript:;">心理学</a>
+                    <a href="javascript:;">政治/军事</a>
+                    <a href="javascript:;">国学/古籍</a>
+                    <a href="javascript:;">哲学/宗教</a>
+                    <a href="javascript:;">社会科学</a>
+                    <a href="javascript:;">法律文化</a>
+                </li>
+                <li><span><a href="javascript:;">生活</a></span>
+                    <a href="javascript:;">孕产</a>
+                    <a href="javascript:;">健身保健</a>
+                    <a href="javascript:;">旅游/地图</a>
+                    <a href="javascript:;">美食时尚</a>
+                    <a href="javascript:;">美妆家居</a>
+                    <a href="javascript:;">手工DIY</a>
+                    <a href="javascript:;">两性体育</a>
+                </li>
+                <li><span><a href="javascript:;">科技</a></span>
+                    <a href="javascript:;">计算机与互联网科普</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">技术电子/通信</a>
+                    <a href="javascript:;">医学</a>
+                    <a href="javascript:;">科学与自然农林</a>
+                </li>
+                <li><span><a href="javascript:;">刊/原版</a></span>
+                    <a href="javascript:;">杂志/期刊</a>
+                    <a href="javascript:;">英文原版书</a>
+                    <a href="javascript:;">港台图书</a>
+                </li>
+                <li><span><a href="javascript:;">电子书</a></span>
+                    <a href="javascript:;">畅读VIP</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">励志与成功</a>
+                    <a href="javascript:;">小说</a>
+                    <a href="javascript:;">经济金融</a>
+                    <a href="javascript:;">文学社科</a>
+                    <a href="javascript:;">婚恋两性</a>
+                    <a href="javascript:;">外文原版</a>
+                    <a href="javascript:;">免费</a>
+                </li>
+                <li><span><a href="javascript:;">数字音乐</a></span>
+                    <a href="javascript:;">通俗流行</a>
+                    <a href="javascript:;">古典音乐</a>
+                    <a href="javascript:;">摇滚</a>
+                    <a href="javascript:;">说唱</a>
+                    <a href="javascript:;">爵士蓝调</a>
+                    <a href="javascript:;">乡村民谣</a>
+                    <a href="javascript:;">有声读物</a
+                </li>
+              </ul>
+              <div class="list_img">
+                <div>
+                  <img src="images/tushulogo1.jpg" alt="">
+                  <img src="images/tushulogo2.jpg" alt="">
+                  <img src="images/tushulogo3.jpg" alt="">
+                  <img src="images/tushulogo4.jpg" alt="">
+                  <img src="images/tushulogo5.jpg" alt="">
+                  <img src="images/tushulogo6.jpg" alt="">
+                  <img src="images/tushulogo7.jpg" alt="">
+                  <img src="images/tushulogo8.jpg" alt="">
+                </div>
+                <img src="images/tushu2.jpg" alt="">
+                <img src="images/tushu3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="list_detail">
+            <div class="clearfix">
+              <ul>
+                <li><span><a href="javascript:;">音像</a></span>
+                    <a href="javascript:;">音乐</a>
+                    <a href="javascript:;">影视</a>
+                    <a href="javascript:;">教育音像</a>
+                    <a href="javascript:;">游戏</a>
+                    <a href="javascript:;">影视/动漫周边</a>
+                </li>
+                <li><span><a href="javascript:;">少儿</a></span>
+                    <a href="javascript:;">0-2岁</a>
+                    <a href="javascript:;">3-6岁</a>
+                    <a href="javascript:;">7-10岁</a>
+                    <a href="javascript:;">11-14岁</a>
+                    <a href="javascript:;">绘本科普</a>
+                    <a href="javascript:;">儿童文学</a>
+                    <a href="javascript:;">幼儿启蒙</a>
+                    <a href="javascript:;">手工游戏</a>
+                    <a href="javascript:;">智力开发</a>
+                </li>
+                <li><span><a href="javascript:;">教育</a></span>
+                    <a href="javascript:;">教材</a>
+                    <a href="javascript:;">中小学教辅</a>
+                    <a href="javascript:;">考试</a>
+                    <a href="javascript:;">外语学习</a>
+                    <a href="javascript:;">字典词典</a>
+                </li>
+                <li><span><a href="javascript:;">文艺</a></span>
+                    <a href="javascript:;">小说文学</a>
+                    <a href="javascript:;">青春文学</a>
+                    <a href="javascript:;">传记</a>
+                    <a href="javascript:;">动漫</a>
+                    <a href="javascript:;">艺术摄影</a>
+                </li>
+                <li><span><a href="javascript:;">经管励志</a></span>
+                    <a href="javascript:;">管理</a>
+                    <a href="javascript:;">金融与投资</a>
+                    <a href="javascript:;">经济</a>
+                    <a href="javascript:;">励志与成功</a>
+                </li>
+                <li><span><a href="javascript:;">人文社</a></span>
+                    <a href="javascript:;">历史</a>
+                    <a href="javascript:;">心理学</a>
+                    <a href="javascript:;">政治/军事</a>
+                    <a href="javascript:;">国学/古籍</a>
+                    <a href="javascript:;">哲学/宗教</a>
+                    <a href="javascript:;">社会科学</a>
+                    <a href="javascript:;">法律文化</a>
+                </li>
+                <li><span><a href="javascript:;">生活</a></span>
+                    <a href="javascript:;">孕产</a>
+                    <a href="javascript:;">健身保健</a>
+                    <a href="javascript:;">旅游/地图</a>
+                    <a href="javascript:;">美食时尚</a>
+                    <a href="javascript:;">美妆家居</a>
+                    <a href="javascript:;">手工DIY</a>
+                    <a href="javascript:;">两性体育</a>
+                </li>
+                <li><span><a href="javascript:;">科技</a></span>
+                    <a href="javascript:;">计算机与互联网科普</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">技术电子/通信</a>
+                    <a href="javascript:;">医学</a>
+                    <a href="javascript:;">科学与自然农林</a>
+                </li>
+                <li><span><a href="javascript:;">刊/原版</a></span>
+                    <a href="javascript:;">杂志/期刊</a>
+                    <a href="javascript:;">英文原版书</a>
+                    <a href="javascript:;">港台图书</a>
+                </li>
+                <li><span><a href="javascript:;">电子书</a></span>
+                    <a href="javascript:;">畅读VIP</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">励志与成功</a>
+                    <a href="javascript:;">小说</a>
+                    <a href="javascript:;">经济金融</a>
+                    <a href="javascript:;">文学社科</a>
+                    <a href="javascript:;">婚恋两性</a>
+                    <a href="javascript:;">外文原版</a>
+                    <a href="javascript:;">免费</a>
+                </li>
+                <li><span><a href="javascript:;">数字音乐</a></span>
+                    <a href="javascript:;">通俗流行</a>
+                    <a href="javascript:;">古典音乐</a>
+                    <a href="javascript:;">摇滚</a>
+                    <a href="javascript:;">说唱</a>
+                    <a href="javascript:;">爵士蓝调</a>
+                    <a href="javascript:;">乡村民谣</a>
+                    <a href="javascript:;">有声读物</a
+                </li>
+              </ul>
+              <div class="list_img">
+                <div>
+                  <img src="images/tushulogo1.jpg" alt="">
+                  <img src="images/tushulogo2.jpg" alt="">
+                  <img src="images/tushulogo3.jpg" alt="">
+                  <img src="images/tushulogo4.jpg" alt="">
+                  <img src="images/tushulogo5.jpg" alt="">
+                  <img src="images/tushulogo6.jpg" alt="">
+                  <img src="images/tushulogo7.jpg" alt="">
+                  <img src="images/tushulogo8.jpg" alt="">
+                </div>
+                <img src="images/tushu2.jpg" alt="">
+                <img src="images/tushu3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="list_detail">
+            <div class="clearfix">
+              <ul>
+                <li><span><a href="javascript:;">音像</a></span>
+                    <a href="javascript:;">音乐</a>
+                    <a href="javascript:;">影视</a>
+                    <a href="javascript:;">教育音像</a>
+                    <a href="javascript:;">游戏</a>
+                    <a href="javascript:;">影视/动漫周边</a>
+                </li>
+                <li><span><a href="javascript:;">少儿</a></span>
+                    <a href="javascript:;">0-2岁</a>
+                    <a href="javascript:;">3-6岁</a>
+                    <a href="javascript:;">7-10岁</a>
+                    <a href="javascript:;">11-14岁</a>
+                    <a href="javascript:;">绘本科普</a>
+                    <a href="javascript:;">儿童文学</a>
+                    <a href="javascript:;">幼儿启蒙</a>
+                    <a href="javascript:;">手工游戏</a>
+                    <a href="javascript:;">智力开发</a>
+                </li>
+                <li><span><a href="javascript:;">教育</a></span>
+                    <a href="javascript:;">教材</a>
+                    <a href="javascript:;">中小学教辅</a>
+                    <a href="javascript:;">考试</a>
+                    <a href="javascript:;">外语学习</a>
+                    <a href="javascript:;">字典词典</a>
+                </li>
+                <li><span><a href="javascript:;">文艺</a></span>
+                    <a href="javascript:;">小说文学</a>
+                    <a href="javascript:;">青春文学</a>
+                    <a href="javascript:;">传记</a>
+                    <a href="javascript:;">动漫</a>
+                    <a href="javascript:;">艺术摄影</a>
+                </li>
+                <li><span><a href="javascript:;">经管励志</a></span>
+                    <a href="javascript:;">管理</a>
+                    <a href="javascript:;">金融与投资</a>
+                    <a href="javascript:;">经济</a>
+                    <a href="javascript:;">励志与成功</a>
+                </li>
+                <li><span><a href="javascript:;">人文社</a></span>
+                    <a href="javascript:;">历史</a>
+                    <a href="javascript:;">心理学</a>
+                    <a href="javascript:;">政治/军事</a>
+                    <a href="javascript:;">国学/古籍</a>
+                    <a href="javascript:;">哲学/宗教</a>
+                    <a href="javascript:;">社会科学</a>
+                    <a href="javascript:;">法律文化</a>
+                </li>
+                <li><span><a href="javascript:;">生活</a></span>
+                    <a href="javascript:;">孕产</a>
+                    <a href="javascript:;">健身保健</a>
+                    <a href="javascript:;">旅游/地图</a>
+                    <a href="javascript:;">美食时尚</a>
+                    <a href="javascript:;">美妆家居</a>
+                    <a href="javascript:;">手工DIY</a>
+                    <a href="javascript:;">两性体育</a>
+                </li>
+                <li><span><a href="javascript:;">科技</a></span>
+                    <a href="javascript:;">计算机与互联网科普</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">技术电子/通信</a>
+                    <a href="javascript:;">医学</a>
+                    <a href="javascript:;">科学与自然农林</a>
+                </li>
+                <li><span><a href="javascript:;">刊/原版</a></span>
+                    <a href="javascript:;">杂志/期刊</a>
+                    <a href="javascript:;">英文原版书</a>
+                    <a href="javascript:;">港台图书</a>
+                </li>
+                <li><span><a href="javascript:;">电子书</a></span>
+                    <a href="javascript:;">畅读VIP</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">励志与成功</a>
+                    <a href="javascript:;">小说</a>
+                    <a href="javascript:;">经济金融</a>
+                    <a href="javascript:;">文学社科</a>
+                    <a href="javascript:;">婚恋两性</a>
+                    <a href="javascript:;">外文原版</a>
+                    <a href="javascript:;">免费</a>
+                </li>
+                <li><span><a href="javascript:;">数字音乐</a></span>
+                    <a href="javascript:;">通俗流行</a>
+                    <a href="javascript:;">古典音乐</a>
+                    <a href="javascript:;">摇滚</a>
+                    <a href="javascript:;">说唱</a>
+                    <a href="javascript:;">爵士蓝调</a>
+                    <a href="javascript:;">乡村民谣</a>
+                    <a href="javascript:;">有声读物</a
+                </li>
+              </ul>
+              <div class="list_img">
+                <div>
+                  <img src="images/tushulogo1.jpg" alt="">
+                  <img src="images/tushulogo2.jpg" alt="">
+                  <img src="images/tushulogo3.jpg" alt="">
+                  <img src="images/tushulogo4.jpg" alt="">
+                  <img src="images/tushulogo5.jpg" alt="">
+                  <img src="images/tushulogo6.jpg" alt="">
+                  <img src="images/tushulogo7.jpg" alt="">
+                  <img src="images/tushulogo8.jpg" alt="">
+                </div>
+                <img src="images/tushu2.jpg" alt="">
+                <img src="images/tushu3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="list_detail">
+            <div class="clearfix">
+              <ul>
+                <li><span><a href="javascript:;">音像</a></span>
+                    <a href="javascript:;">音乐</a>
+                    <a href="javascript:;">影视</a>
+                    <a href="javascript:;">教育音像</a>
+                    <a href="javascript:;">游戏</a>
+                    <a href="javascript:;">影视/动漫周边</a>
+                </li>
+                <li><span><a href="javascript:;">少儿</a></span>
+                    <a href="javascript:;">0-2岁</a>
+                    <a href="javascript:;">3-6岁</a>
+                    <a href="javascript:;">7-10岁</a>
+                    <a href="javascript:;">11-14岁</a>
+                    <a href="javascript:;">绘本科普</a>
+                    <a href="javascript:;">儿童文学</a>
+                    <a href="javascript:;">幼儿启蒙</a>
+                    <a href="javascript:;">手工游戏</a>
+                    <a href="javascript:;">智力开发</a>
+                </li>
+                <li><span><a href="javascript:;">教育</a></span>
+                    <a href="javascript:;">教材</a>
+                    <a href="javascript:;">中小学教辅</a>
+                    <a href="javascript:;">考试</a>
+                    <a href="javascript:;">外语学习</a>
+                    <a href="javascript:;">字典词典</a>
+                </li>
+                <li><span><a href="javascript:;">文艺</a></span>
+                    <a href="javascript:;">小说文学</a>
+                    <a href="javascript:;">青春文学</a>
+                    <a href="javascript:;">传记</a>
+                    <a href="javascript:;">动漫</a>
+                    <a href="javascript:;">艺术摄影</a>
+                </li>
+                <li><span><a href="javascript:;">经管励志</a></span>
+                    <a href="javascript:;">管理</a>
+                    <a href="javascript:;">金融与投资</a>
+                    <a href="javascript:;">经济</a>
+                    <a href="javascript:;">励志与成功</a>
+                </li>
+                <li><span><a href="javascript:;">人文社</a></span>
+                    <a href="javascript:;">历史</a>
+                    <a href="javascript:;">心理学</a>
+                    <a href="javascript:;">政治/军事</a>
+                    <a href="javascript:;">国学/古籍</a>
+                    <a href="javascript:;">哲学/宗教</a>
+                    <a href="javascript:;">社会科学</a>
+                    <a href="javascript:;">法律文化</a>
+                </li>
+                <li><span><a href="javascript:;">生活</a></span>
+                    <a href="javascript:;">孕产</a>
+                    <a href="javascript:;">健身保健</a>
+                    <a href="javascript:;">旅游/地图</a>
+                    <a href="javascript:;">美食时尚</a>
+                    <a href="javascript:;">美妆家居</a>
+                    <a href="javascript:;">手工DIY</a>
+                    <a href="javascript:;">两性体育</a>
+                </li>
+                <li><span><a href="javascript:;">科技</a></span>
+                    <a href="javascript:;">计算机与互联网科普</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">技术电子/通信</a>
+                    <a href="javascript:;">医学</a>
+                    <a href="javascript:;">科学与自然农林</a>
+                </li>
+                <li><span><a href="javascript:;">刊/原版</a></span>
+                    <a href="javascript:;">杂志/期刊</a>
+                    <a href="javascript:;">英文原版书</a>
+                    <a href="javascript:;">港台图书</a>
+                </li>
+                <li><span><a href="javascript:;">电子书</a></span>
+                    <a href="javascript:;">畅读VIP</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">励志与成功</a>
+                    <a href="javascript:;">小说</a>
+                    <a href="javascript:;">经济金融</a>
+                    <a href="javascript:;">文学社科</a>
+                    <a href="javascript:;">婚恋两性</a>
+                    <a href="javascript:;">外文原版</a>
+                    <a href="javascript:;">免费</a>
+                </li>
+                <li><span><a href="javascript:;">数字音乐</a></span>
+                    <a href="javascript:;">通俗流行</a>
+                    <a href="javascript:;">古典音乐</a>
+                    <a href="javascript:;">摇滚</a>
+                    <a href="javascript:;">说唱</a>
+                    <a href="javascript:;">爵士蓝调</a>
+                    <a href="javascript:;">乡村民谣</a>
+                    <a href="javascript:;">有声读物</a
+                </li>
+              </ul>
+              <div class="list_img">
+                <div>
+                  <img src="images/tushulogo1.jpg" alt="">
+                  <img src="images/tushulogo2.jpg" alt="">
+                  <img src="images/tushulogo3.jpg" alt="">
+                  <img src="images/tushulogo4.jpg" alt="">
+                  <img src="images/tushulogo5.jpg" alt="">
+                  <img src="images/tushulogo6.jpg" alt="">
+                  <img src="images/tushulogo7.jpg" alt="">
+                  <img src="images/tushulogo8.jpg" alt="">
+                </div>
+                <img src="images/tushu2.jpg" alt="">
+                <img src="images/tushu3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="list_detail">
+            <div class="clearfix">
+              <ul>
+                <li><span><a href="javascript:;">音像</a></span>
+                    <a href="javascript:;">音乐</a>
+                    <a href="javascript:;">影视</a>
+                    <a href="javascript:;">教育音像</a>
+                    <a href="javascript:;">游戏</a>
+                    <a href="javascript:;">影视/动漫周边</a>
+                </li>
+                <li><span><a href="javascript:;">少儿</a></span>
+                    <a href="javascript:;">0-2岁</a>
+                    <a href="javascript:;">3-6岁</a>
+                    <a href="javascript:;">7-10岁</a>
+                    <a href="javascript:;">11-14岁</a>
+                    <a href="javascript:;">绘本科普</a>
+                    <a href="javascript:;">儿童文学</a>
+                    <a href="javascript:;">幼儿启蒙</a>
+                    <a href="javascript:;">手工游戏</a>
+                    <a href="javascript:;">智力开发</a>
+                </li>
+                <li><span><a href="javascript:;">教育</a></span>
+                    <a href="javascript:;">教材</a>
+                    <a href="javascript:;">中小学教辅</a>
+                    <a href="javascript:;">考试</a>
+                    <a href="javascript:;">外语学习</a>
+                    <a href="javascript:;">字典词典</a>
+                </li>
+                <li><span><a href="javascript:;">文艺</a></span>
+                    <a href="javascript:;">小说文学</a>
+                    <a href="javascript:;">青春文学</a>
+                    <a href="javascript:;">传记</a>
+                    <a href="javascript:;">动漫</a>
+                    <a href="javascript:;">艺术摄影</a>
+                </li>
+                <li><span><a href="javascript:;">经管励志</a></span>
+                    <a href="javascript:;">管理</a>
+                    <a href="javascript:;">金融与投资</a>
+                    <a href="javascript:;">经济</a>
+                    <a href="javascript:;">励志与成功</a>
+                </li>
+                <li><span><a href="javascript:;">人文社</a></span>
+                    <a href="javascript:;">历史</a>
+                    <a href="javascript:;">心理学</a>
+                    <a href="javascript:;">政治/军事</a>
+                    <a href="javascript:;">国学/古籍</a>
+                    <a href="javascript:;">哲学/宗教</a>
+                    <a href="javascript:;">社会科学</a>
+                    <a href="javascript:;">法律文化</a>
+                </li>
+                <li><span><a href="javascript:;">生活</a></span>
+                    <a href="javascript:;">孕产</a>
+                    <a href="javascript:;">健身保健</a>
+                    <a href="javascript:;">旅游/地图</a>
+                    <a href="javascript:;">美食时尚</a>
+                    <a href="javascript:;">美妆家居</a>
+                    <a href="javascript:;">手工DIY</a>
+                    <a href="javascript:;">两性体育</a>
+                </li>
+                <li><span><a href="javascript:;">科技</a></span>
+                    <a href="javascript:;">计算机与互联网科普</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">技术电子/通信</a>
+                    <a href="javascript:;">医学</a>
+                    <a href="javascript:;">科学与自然农林</a>
+                </li>
+                <li><span><a href="javascript:;">刊/原版</a></span>
+                    <a href="javascript:;">杂志/期刊</a>
+                    <a href="javascript:;">英文原版书</a>
+                    <a href="javascript:;">港台图书</a>
+                </li>
+                <li><span><a href="javascript:;">电子书</a></span>
+                    <a href="javascript:;">畅读VIP</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">励志与成功</a>
+                    <a href="javascript:;">小说</a>
+                    <a href="javascript:;">经济金融</a>
+                    <a href="javascript:;">文学社科</a>
+                    <a href="javascript:;">婚恋两性</a>
+                    <a href="javascript:;">外文原版</a>
+                    <a href="javascript:;">免费</a>
+                </li>
+                <li><span><a href="javascript:;">数字音乐</a></span>
+                    <a href="javascript:;">通俗流行</a>
+                    <a href="javascript:;">古典音乐</a>
+                    <a href="javascript:;">摇滚</a>
+                    <a href="javascript:;">说唱</a>
+                    <a href="javascript:;">爵士蓝调</a>
+                    <a href="javascript:;">乡村民谣</a>
+                    <a href="javascript:;">有声读物</a
+                </li>
+              </ul>
+              <div class="list_img">
+                <div>
+                  <img src="images/tushulogo1.jpg" alt="">
+                  <img src="images/tushulogo2.jpg" alt="">
+                  <img src="images/tushulogo3.jpg" alt="">
+                  <img src="images/tushulogo4.jpg" alt="">
+                  <img src="images/tushulogo5.jpg" alt="">
+                  <img src="images/tushulogo6.jpg" alt="">
+                  <img src="images/tushulogo7.jpg" alt="">
+                  <img src="images/tushulogo8.jpg" alt="">
+                </div>
+                <img src="images/tushu2.jpg" alt="">
+                <img src="images/tushu3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="list_detail">
+            <div class="clearfix">
+              <ul>
+                <li><span><a href="javascript:;">音像</a></span>
+                    <a href="javascript:;">音乐</a>
+                    <a href="javascript:;">影视</a>
+                    <a href="javascript:;">教育音像</a>
+                    <a href="javascript:;">游戏</a>
+                    <a href="javascript:;">影视/动漫周边</a>
+                </li>
+                <li><span><a href="javascript:;">少儿</a></span>
+                    <a href="javascript:;">0-2岁</a>
+                    <a href="javascript:;">3-6岁</a>
+                    <a href="javascript:;">7-10岁</a>
+                    <a href="javascript:;">11-14岁</a>
+                    <a href="javascript:;">绘本科普</a>
+                    <a href="javascript:;">儿童文学</a>
+                    <a href="javascript:;">幼儿启蒙</a>
+                    <a href="javascript:;">手工游戏</a>
+                    <a href="javascript:;">智力开发</a>
+                </li>
+                <li><span><a href="javascript:;">教育</a></span>
+                    <a href="javascript:;">教材</a>
+                    <a href="javascript:;">中小学教辅</a>
+                    <a href="javascript:;">考试</a>
+                    <a href="javascript:;">外语学习</a>
+                    <a href="javascript:;">字典词典</a>
+                </li>
+                <li><span><a href="javascript:;">文艺</a></span>
+                    <a href="javascript:;">小说文学</a>
+                    <a href="javascript:;">青春文学</a>
+                    <a href="javascript:;">传记</a>
+                    <a href="javascript:;">动漫</a>
+                    <a href="javascript:;">艺术摄影</a>
+                </li>
+                <li><span><a href="javascript:;">经管励志</a></span>
+                    <a href="javascript:;">管理</a>
+                    <a href="javascript:;">金融与投资</a>
+                    <a href="javascript:;">经济</a>
+                    <a href="javascript:;">励志与成功</a>
+                </li>
+                <li><span><a href="javascript:;">人文社</a></span>
+                    <a href="javascript:;">历史</a>
+                    <a href="javascript:;">心理学</a>
+                    <a href="javascript:;">政治/军事</a>
+                    <a href="javascript:;">国学/古籍</a>
+                    <a href="javascript:;">哲学/宗教</a>
+                    <a href="javascript:;">社会科学</a>
+                    <a href="javascript:;">法律文化</a>
+                </li>
+                <li><span><a href="javascript:;">生活</a></span>
+                    <a href="javascript:;">孕产</a>
+                    <a href="javascript:;">健身保健</a>
+                    <a href="javascript:;">旅游/地图</a>
+                    <a href="javascript:;">美食时尚</a>
+                    <a href="javascript:;">美妆家居</a>
+                    <a href="javascript:;">手工DIY</a>
+                    <a href="javascript:;">两性体育</a>
+                </li>
+                <li><span><a href="javascript:;">科技</a></span>
+                    <a href="javascript:;">计算机与互联网科普</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">技术电子/通信</a>
+                    <a href="javascript:;">医学</a>
+                    <a href="javascript:;">科学与自然农林</a>
+                </li>
+                <li><span><a href="javascript:;">刊/原版</a></span>
+                    <a href="javascript:;">杂志/期刊</a>
+                    <a href="javascript:;">英文原版书</a>
+                    <a href="javascript:;">港台图书</a>
+                </li>
+                <li><span><a href="javascript:;">电子书</a></span>
+                    <a href="javascript:;">畅读VIP</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">励志与成功</a>
+                    <a href="javascript:;">小说</a>
+                    <a href="javascript:;">经济金融</a>
+                    <a href="javascript:;">文学社科</a>
+                    <a href="javascript:;">婚恋两性</a>
+                    <a href="javascript:;">外文原版</a>
+                    <a href="javascript:;">免费</a>
+                </li>
+                <li><span><a href="javascript:;">数字音乐</a></span>
+                    <a href="javascript:;">通俗流行</a>
+                    <a href="javascript:;">古典音乐</a>
+                    <a href="javascript:;">摇滚</a>
+                    <a href="javascript:;">说唱</a>
+                    <a href="javascript:;">爵士蓝调</a>
+                    <a href="javascript:;">乡村民谣</a>
+                    <a href="javascript:;">有声读物</a
+                </li>
+              </ul>
+              <div class="list_img">
+                <div>
+                  <img src="images/tushulogo1.jpg" alt="">
+                  <img src="images/tushulogo2.jpg" alt="">
+                  <img src="images/tushulogo3.jpg" alt="">
+                  <img src="images/tushulogo4.jpg" alt="">
+                  <img src="images/tushulogo5.jpg" alt="">
+                  <img src="images/tushulogo6.jpg" alt="">
+                  <img src="images/tushulogo7.jpg" alt="">
+                  <img src="images/tushulogo8.jpg" alt="">
+                </div>
+                <img src="images/tushu2.jpg" alt="">
+                <img src="images/tushu3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="list_detail">
+            <div class="clearfix">
+              <ul>
+                <li><span><a href="javascript:;">音像</a></span>
+                    <a href="javascript:;">音乐</a>
+                    <a href="javascript:;">影视</a>
+                    <a href="javascript:;">教育音像</a>
+                    <a href="javascript:;">游戏</a>
+                    <a href="javascript:;">影视/动漫周边</a>
+                </li>
+                <li><span><a href="javascript:;">少儿</a></span>
+                    <a href="javascript:;">0-2岁</a>
+                    <a href="javascript:;">3-6岁</a>
+                    <a href="javascript:;">7-10岁</a>
+                    <a href="javascript:;">11-14岁</a>
+                    <a href="javascript:;">绘本科普</a>
+                    <a href="javascript:;">儿童文学</a>
+                    <a href="javascript:;">幼儿启蒙</a>
+                    <a href="javascript:;">手工游戏</a>
+                    <a href="javascript:;">智力开发</a>
+                </li>
+                <li><span><a href="javascript:;">教育</a></span>
+                    <a href="javascript:;">教材</a>
+                    <a href="javascript:;">中小学教辅</a>
+                    <a href="javascript:;">考试</a>
+                    <a href="javascript:;">外语学习</a>
+                    <a href="javascript:;">字典词典</a>
+                </li>
+                <li><span><a href="javascript:;">文艺</a></span>
+                    <a href="javascript:;">小说文学</a>
+                    <a href="javascript:;">青春文学</a>
+                    <a href="javascript:;">传记</a>
+                    <a href="javascript:;">动漫</a>
+                    <a href="javascript:;">艺术摄影</a>
+                </li>
+                <li><span><a href="javascript:;">经管励志</a></span>
+                    <a href="javascript:;">管理</a>
+                    <a href="javascript:;">金融与投资</a>
+                    <a href="javascript:;">经济</a>
+                    <a href="javascript:;">励志与成功</a>
+                </li>
+                <li><span><a href="javascript:;">人文社</a></span>
+                    <a href="javascript:;">历史</a>
+                    <a href="javascript:;">心理学</a>
+                    <a href="javascript:;">政治/军事</a>
+                    <a href="javascript:;">国学/古籍</a>
+                    <a href="javascript:;">哲学/宗教</a>
+                    <a href="javascript:;">社会科学</a>
+                    <a href="javascript:;">法律文化</a>
+                </li>
+                <li><span><a href="javascript:;">生活</a></span>
+                    <a href="javascript:;">孕产</a>
+                    <a href="javascript:;">健身保健</a>
+                    <a href="javascript:;">旅游/地图</a>
+                    <a href="javascript:;">美食时尚</a>
+                    <a href="javascript:;">美妆家居</a>
+                    <a href="javascript:;">手工DIY</a>
+                    <a href="javascript:;">两性体育</a>
+                </li>
+                <li><span><a href="javascript:;">科技</a></span>
+                    <a href="javascript:;">计算机与互联网科普</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">技术电子/通信</a>
+                    <a href="javascript:;">医学</a>
+                    <a href="javascript:;">科学与自然农林</a>
+                </li>
+                <li><span><a href="javascript:;">刊/原版</a></span>
+                    <a href="javascript:;">杂志/期刊</a>
+                    <a href="javascript:;">英文原版书</a>
+                    <a href="javascript:;">港台图书</a>
+                </li>
+                <li><span><a href="javascript:;">电子书</a></span>
+                    <a href="javascript:;">畅读VIP</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">励志与成功</a>
+                    <a href="javascript:;">小说</a>
+                    <a href="javascript:;">经济金融</a>
+                    <a href="javascript:;">文学社科</a>
+                    <a href="javascript:;">婚恋两性</a>
+                    <a href="javascript:;">外文原版</a>
+                    <a href="javascript:;">免费</a>
+                </li>
+                <li><span><a href="javascript:;">数字音乐</a></span>
+                    <a href="javascript:;">通俗流行</a>
+                    <a href="javascript:;">古典音乐</a>
+                    <a href="javascript:;">摇滚</a>
+                    <a href="javascript:;">说唱</a>
+                    <a href="javascript:;">爵士蓝调</a>
+                    <a href="javascript:;">乡村民谣</a>
+                    <a href="javascript:;">有声读物</a
+                </li>
+              </ul>
+              <div class="list_img">
+                <div>
+                  <img src="images/tushulogo1.jpg" alt="">
+                  <img src="images/tushulogo2.jpg" alt="">
+                  <img src="images/tushulogo3.jpg" alt="">
+                  <img src="images/tushulogo4.jpg" alt="">
+                  <img src="images/tushulogo5.jpg" alt="">
+                  <img src="images/tushulogo6.jpg" alt="">
+                  <img src="images/tushulogo7.jpg" alt="">
+                  <img src="images/tushulogo8.jpg" alt="">
+                </div>
+                <img src="images/tushu2.jpg" alt="">
+                <img src="images/tushu3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="list_detail">
+            <div class="clearfix">
+              <ul>
+                <li><span><a href="javascript:;">音像</a></span>
+                    <a href="javascript:;">音乐</a>
+                    <a href="javascript:;">影视</a>
+                    <a href="javascript:;">教育音像</a>
+                    <a href="javascript:;">游戏</a>
+                    <a href="javascript:;">影视/动漫周边</a>
+                </li>
+                <li><span><a href="javascript:;">少儿</a></span>
+                    <a href="javascript:;">0-2岁</a>
+                    <a href="javascript:;">3-6岁</a>
+                    <a href="javascript:;">7-10岁</a>
+                    <a href="javascript:;">11-14岁</a>
+                    <a href="javascript:;">绘本科普</a>
+                    <a href="javascript:;">儿童文学</a>
+                    <a href="javascript:;">幼儿启蒙</a>
+                    <a href="javascript:;">手工游戏</a>
+                    <a href="javascript:;">智力开发</a>
+                </li>
+                <li><span><a href="javascript:;">教育</a></span>
+                    <a href="javascript:;">教材</a>
+                    <a href="javascript:;">中小学教辅</a>
+                    <a href="javascript:;">考试</a>
+                    <a href="javascript:;">外语学习</a>
+                    <a href="javascript:;">字典词典</a>
+                </li>
+                <li><span><a href="javascript:;">文艺</a></span>
+                    <a href="javascript:;">小说文学</a>
+                    <a href="javascript:;">青春文学</a>
+                    <a href="javascript:;">传记</a>
+                    <a href="javascript:;">动漫</a>
+                    <a href="javascript:;">艺术摄影</a>
+                </li>
+                <li><span><a href="javascript:;">经管励志</a></span>
+                    <a href="javascript:;">管理</a>
+                    <a href="javascript:;">金融与投资</a>
+                    <a href="javascript:;">经济</a>
+                    <a href="javascript:;">励志与成功</a>
+                </li>
+                <li><span><a href="javascript:;">人文社</a></span>
+                    <a href="javascript:;">历史</a>
+                    <a href="javascript:;">心理学</a>
+                    <a href="javascript:;">政治/军事</a>
+                    <a href="javascript:;">国学/古籍</a>
+                    <a href="javascript:;">哲学/宗教</a>
+                    <a href="javascript:;">社会科学</a>
+                    <a href="javascript:;">法律文化</a>
+                </li>
+                <li><span><a href="javascript:;">生活</a></span>
+                    <a href="javascript:;">孕产</a>
+                    <a href="javascript:;">健身保健</a>
+                    <a href="javascript:;">旅游/地图</a>
+                    <a href="javascript:;">美食时尚</a>
+                    <a href="javascript:;">美妆家居</a>
+                    <a href="javascript:;">手工DIY</a>
+                    <a href="javascript:;">两性体育</a>
+                </li>
+                <li><span><a href="javascript:;">科技</a></span>
+                    <a href="javascript:;">计算机与互联网科普</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">技术电子/通信</a>
+                    <a href="javascript:;">医学</a>
+                    <a href="javascript:;">科学与自然农林</a>
+                </li>
+                <li><span><a href="javascript:;">刊/原版</a></span>
+                    <a href="javascript:;">杂志/期刊</a>
+                    <a href="javascript:;">英文原版书</a>
+                    <a href="javascript:;">港台图书</a>
+                </li>
+                <li><span><a href="javascript:;">电子书</a></span>
+                    <a href="javascript:;">畅读VIP</a>
+                    <a href="javascript:;">建筑工业</a>
+                    <a href="javascript:;">励志与成功</a>
+                    <a href="javascript:;">小说</a>
+                    <a href="javascript:;">经济金融</a>
+                    <a href="javascript:;">文学社科</a>
+                    <a href="javascript:;">婚恋两性</a>
+                    <a href="javascript:;">外文原版</a>
+                    <a href="javascript:;">免费</a>
+                </li>
+                <li><span><a href="javascript:;">数字音乐</a></span>
+                    <a href="javascript:;">通俗流行</a>
+                    <a href="javascript:;">古典音乐</a>
+                    <a href="javascript:;">摇滚</a>
+                    <a href="javascript:;">说唱</a>
+                    <a href="javascript:;">爵士蓝调</a>
+                    <a href="javascript:;">乡村民谣</a>
+                    <a href="javascript:;">有声读物</a
+                </li>
+              </ul>
+              <div class="list_img">
+                <div>
+                  <img src="images/tushulogo1.jpg" alt="">
+                  <img src="images/tushulogo2.jpg" alt="">
+                  <img src="images/tushulogo3.jpg" alt="">
+                  <img src="images/tushulogo4.jpg" alt="">
+                  <img src="images/tushulogo5.jpg" alt="">
+                  <img src="images/tushulogo6.jpg" alt="">
+                  <img src="images/tushulogo7.jpg" alt="">
+                  <img src="images/tushulogo8.jpg" alt="">
+                </div>
+                <img src="images/tushu2.jpg" alt="">
+                <img src="images/tushu3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="clearfix">
+        <li><a href="">首页</a></li>
+        <li><a href="">服装城</a></li>
+        <li><a href="">食品</a></li>
+        <li><a href="">团购</a></li>
+        <li><a href="">夺宝岛</a></li>
+        <li><a href="">闪购</a></li>
+        <li><a href="">金融</a></li>
+      </ul>
+     </div>
+
+	<!-- 主体内容 -->
+    <div id="main" class="clearfix">
+      <div class="main_top">
+       <div class="breadcrumb">
+         <strong>家居家装 </strong>&nbsp;&nbsp;&gt;&nbsp;<a href="">清洁用品</a>&nbsp;&nbsp;&gt;&nbsp;
+         <a href="">衣物清洁</a>&nbsp;&nbsp;&gt;&nbsp;
+         <a href="">卫新</a>&nbsp;&nbsp;&gt;&nbsp;
+         <a href="">卫新洗衣液</a>
+       </div>
+       <div class="pro_show clearfix">
+          <div class="img_info">
+            <div class="img_wrap">
+               <div class="control-box" id="control_box">
+                <div class="box" id="box"></div>
+               </div>
+            <div class="mid-pic" id="mid-pic">
+               <img src="images/pic_m01.jpg" alt="" id="midImg">
+            </div>
+            <div class="big-pic" id="big-pic" style="display: none;">
+               <img src="images/pic_b01.jpg" alt="" id="bigImg">
+            </div>
+            </div>
+            <div id="img_control">
+            <button style="border-color: red;"><img src="images/pic_s01.jpg" alt=""></button>
+            <button><img src="images/pic_s02.jpg" alt=""></button>
+            <button><img src="images/pic_s03.jpg" alt=""></button>
+            <button><img src="images/pic_s04.jpg" alt=""></button>
+            </div>
+           <div>
+             <p class="clearfix"><span>商品编号：1039778</span><span class="fright"><a href="" id="share_list"><b></b>分享</a>
+           <a href="" id="mask_list"> <b></b>关注商品</a></span></p>
+           </div>
+         </div>
+         <div class="buy_info">
+             <h2 class="big">卫新 薰衣草洗衣液 4.26kg</h2>
+             <h3 class="red">与威露士一起巩固健康生活</h3>
+             <div class="sale_info">
+               <div class ="comment_count">
+                 <p>累计评价</p>
+                 <a id="comment_count">23445</a>
+               </div>
+               <div id="this_price">
+                 <span class="begin">京 东 价 ：</span>
+                 <span class="red big">￥59.90</span><a href=""> (降价通知)</a>
+               </div>
+               <div id="sale_info" class="clearfix">
+                 <div class="fleft">
+                   <span class="begin">促销信息：</span>
+                 </div>
+                 <div class="fleft sale_list">
+                   <div><b>满减</b><span class="red">满300.0减100.0，满800.0减300.0 </span><a href="">详情 >></a></div>
+                   <div><b>满额返券</b><span class="red">购买威露士及旗下品牌满88元返88元优惠券，免费得大礼包</span><a href="">详情 >></a></div>
+                 </div>
+               </div>
+             </div>
+             <div id="this_express">
+                 <span class="begin">配 送 至 :</span><div class="address">
+                   <div class="address_text" onclick="showHide('address_info','block')"><em id="choose_address">北京朝阳区管庄</em><b></b>
+                   </div>
+                   <div class="address_info" id="address_info">
+                   <span id="express_close" onclick="showHide('address_info','none')"></span>
+                   <div class="area_index">
+                     <ul class="clearfix">
+                       <li class="tap-nav"><a href="javascipt:;" class="hover">北京</a></li>
+                       <li class="tap-nav"><a href="javascipt:;">朝阳区</a></li>
+                       <li class="tap-nav"><a href="javascipt:;">管庄</a></li>
+                     </ul>
+                     </div>
+                     <div class="address_list">
+                     <div class="area_list">
+                       <ul class="clearfix" id="province_list">
+                       </ul></div><div class="area_list" style="display: none;">
+                       <ul class="clearfix" id="city_list">
+                       </ul></div><div class="area_list" style="display: none;">
+                       <ul class="clearfix" id="area_list" >
+                       </ul></div>
+                     </div>
+                   </div>
+                   </div>
+                   <span class="black_big">有货，</span>支持&nbsp;<a href="">免运费 </a>|<a href=""> 货到付款</a>
+                 </div>
+             
+             <div id="this_service">
+                 <span class="begin">
+                   服 &nbsp;&nbsp;&nbsp; &nbsp;务:
+                 </span>
+                由 京东 发货并提供售后服务。11:00前完成下单，预计<span class="black_big">今日（02月12日）</span>送达.
+             </div>
+             <div id="chose_color" class="clearfix">
+               <div><span class="begin">选择颜色：</span></div><div>
+               <a href="javascript:;" class="clearfix on"><img src="images/products/p_icon_01.jpg" alt=""><b>薰衣草</b><i></i></a><a href="javascript:;" class="clearfix"><img src="images/products/p_icon_02.jpg" alt=""><b>索菲亚玫瑰</b><i></i></a></div>
+             </div>
+             <div class="pick_buy clearfix">
+               <div class="choose_num">
+                 <input type="text" value="1" id="choose_num"><b id="make_add">+</b><b id="make_reduce">_</b>
+               </div>
+               <a href="" id="shop_car"></a>
+               <a href="" id="dabaitiao"></a>
+             </div>
+
+         </div>
+         <div class="side_info">
+           <div class="jd_zy"><span>京东自营</span></div>
+           <div class="zxzx">留言咨询</div>
+           <div class="service_offer">
+             <dl class="clearfix">
+               <dt>服务支持：</dt>
+               <dd class="dd1">春节不打烊</dd>
+               <dd class="dd2">211限时达</dd>
+               <dd class="dd3">自提</dd>
+             </dl>
+           </div>
+         </div>
+       </div>
+       <div class="suggest_buy">
+         <div class="suggest_nav">
+           <ul>
+             <li class="cur"><a href="javascript:;">推荐购买</a></li>
+             <li><a href="javascript:;">最佳组合</a></li>
+           </ul>
+         </div>
+         <div class="suggest_info" style="display: block;">
+             <ul class="suggest_tap clearfix">
+               <li class="on" id="all_offer">全部配件</li>
+               <li id="bad_suit">床品套件(1)</li>
+               <li id="washcloth">毛巾浴巾(3)</li>
+               <li id="clean_tool">清洁工具(1)</li>
+               <li id="storage_tool">收纳用品(2)</li>
+               <li id="male_sock">商务男袜(1)</li>
+             </ul>
+           <div class="suggest_detail  clearfix">
+               <div class="self">
+               <div class="p_img">
+               <s></s>
+                 <a href="javascript:;">
+                   <img src="images/products/product_01_m.jpg" alt="">
+                 </a>
+               </div>
+               <div class="p_name">
+                 <a href="javascript:;">卫新 薰衣草洗衣液 4.26kg</a>
+               </div>
+               <div class="p_choose" style="display: none;">
+                 <input type="checkbox"><strong>$39.9</strong>
+               </div>
+               </div>
+               <div class="offer">
+                 <ul class="clearfix">
+                   <li class="bad_suit">
+                                    <div class="p_img">
+               <s></s>
+                 <a href="javascript:;">
+                   <img src="images/products/product_05_m.jpg" alt="">
+                 </a>
+               </div>
+               <div class="p_name">
+                 <a href="javascript:;">佳佰长绒棉毛巾白色2件装 </a>
+               </div>
+               <div class="p_choose">
+                 <input type="checkbox"><strong>￥39.00</strong>
+               </div>
+                   </li>
+                   <li class="washcloth">
+                                    <div class="p_img">
+               <s></s>
+                 <a href="javascript:;">
+                   <img src="images/products/product_06_m.jpg" alt="">
+                 </a>
+               </div>
+               <div class="p_name">
+                 <a href="javascript:;">佳佰Hommy9丝压缩袋(2大2中4小)赠双管气泵</a>
+               </div>
+               <div class="p_choose">
+                 <input type="checkbox"><strong> ￥49.00</strong>
+               </div>
+                   </li>
+                   <li class="washcloth">
+                                    <div class="p_img">
+               <s></s>
+                 <a href="javascript:;">
+                   <img src="images/products/product_07_m.jpg" alt="">
+                 </a>
+               </div>
+               <div class="p_name">
+                 <a href="javascript:;">【京东自营】INTERIGHT 100支全棉免烫长袖衬衫 </a>
+               </div>
+               <div class="p_choose">
+                 <input type="checkbox"><strong> ￥139.00</strong>
+               </div>
+                   </li>
+                   <li class="washcloth">
+                                    <div class="p_img">
+               <s></s>
+                 <a href="javascript:;">
+                   <img src="images/products/product_08_m.jpg" alt="">
+                 </a>
+               </div>
+               <div class="p_name">
+                 <a href="javascript:;">INTERIGHT 商务休闲男袜 精梳棉中筒6双礼盒装 4黑</a>
+               </div>
+               <div class="p_choose">
+                 <input type="checkbox"><strong>￥69.00</strong>
+               </div>
+                   </li>
+                   <li class="clean_tool">
+                                    <div class="p_img">
+               <s></s>
+                 <a href="javascript:;">
+                   <img src="images/products/product_09_m.jpg" alt="">
+                 </a>
+               </div>
+               <div class="p_name">
+                 <a href="javascript:;">百草园 印花牛津布三面可视钢架 收纳 整理箱（橘黄</a>
+               </div>
+               <div class="p_choose">
+                 <input type="checkbox"><strong>￥60.00</strong>
+               </div>
+                   </li>
+                   <li class="storage_tool">
+                                    <div class="p_img">
+               <s></s>
+                 <a href="javascript:;">
+                   <img src="images/products/product_10_m.jpg" alt="">
+                 </a>
+               </div>
+               <div class="p_name">
+                 <a href="javascript:;">百草园 清洁洗碗擦拭巾6层3片装28cmx28cm</a>
+               </div>
+               <div class="p_choose">
+                 <input type="checkbox"><strong>￥11.90</strong>
+               </div>
+                   </li>
+                   <li class="storage_tool">
+                                    <div class="p_img">
+               <s></s>
+                 <a href="javascript:;">
+                   <img src="images/products/product_01_m.jpg" alt="">
+                 </a>
+               </div>
+               <div class="p_name">
+                 <a href="javascript:;">卫新 薰衣草洗衣液 4.26kg</a>
+               </div>
+               <div class="p_choose">
+                 <input type="checkbox"><strong>￥60.00</strong>
+               </div>
+                   </li>
+                   <li class="male_sock">
+                                    <div class="p_img">
+               <s></s>
+                 <a href="javascript:;">
+                   <img src="images/products/product_02_m.jpg" alt="">
+                 </a>
+               </div>
+               <div class="p_name">
+                 <a href="javascript:;">卫新 薰衣草洗衣液 4.26kg</a>
+               </div>
+               <div class="p_choose">
+                 <input type="checkbox"><strong>￥60.00</strong>
+               </div>
+                   </li>
+                   <li class="male_sock">
+                                    <div class="p_img">
+               <s></s>
+                 <a href="javascript:;">
+                   <img src="images/products/product_03_m.jpg" alt="">
+                 </a>
+               </div>
+               <div class="p_name">
+                 <a href="javascript:;">卫新 薰衣草洗衣液 4.26kg</a>
+               </div>
+               <div class="p_choose">
+                 <input type="checkbox"><strong>￥60.00</strong>
+               </div>
+                   </li>
+                   <li class="male_sock">
+                                    <div class="p_img">
+               <s></s>
+                 <a href="javascript:;">
+                   <img src="images/products/product_04_m.jpg" alt="">
+                 </a>
+               </div>
+               <div class="p_name">
+                 <a href="javascript:;">卫新 薰衣草洗衣液 4.26kg</a>
+               </div>
+               <div class="p_choose">
+                 <input type="checkbox"><strong>￥60.00</strong>
+               </div>
+                   </li>
+                 </ul>
+               </div>
+               <div class="infos" class="clearfix">
+                 <s></s>
+                 <div>
+                 <p>已选择<span id="choose_num"></span>0个配件</p>
+                 <div class="p_price">
+                   <p>搭 配 价：<span id="totle_price">￥59.90</span></p>
+                   <p>获得优惠：<span id="reduce_price">￥16.60</span></p>
+                   <a href="javascript:;"></a>
+                 </div>
+                 </div>
+               </div>
+           </div>
+         </div>
+         <div class="suggest_info" id="suggest_buy" style="display: none;">
+            <ul class="clearfix">
+             <li>
+               <div class="p_img">
+               <a href="javascript:;">
+                 <img src="images/products/p001.jpg" alt="">
+               </div>
+               </a>
+               <div class="p_name">
+                 <a href="javascript:;">威露士（Walch） 手洗洗衣液单袋装 500ml</a>
+               </div>
+               <p><span>￥13.90</span></p>
+             </li>
+             <li>
+               <div class="p_img">
+               <a href="javascript:;">
+                 <img src="images/products/p002.jpg" alt="">
+               </div>
+               </a>
+               <div class="p_name">
+                 <a href="javascript:;">维达 卫生纸 蓝色经典140g卷纸*10卷</a>
+               </div>
+               <p><span>￥19.90</span></p>
+             </li>
+             </li>
+             <li>
+               <div class="p_img">
+               <a href="javascript:;">
+                 <img src="images/products/p003.jpg" alt="">
+               </div>
+               </a>
+               <div class="p_name">
+                 <a href="javascript:;">潘婷丝质顺滑洗发露750ML 新老包装随机发放</a>
+               </div>
+               <p><span>￥39.90</span></p>
+             </li>
+             </li>
+             <li>
+               <div class="p_img">
+               <a href="javascript:;">
+                 <img src="images/products/p004.jpg" alt="">
+               </div>
+               </a>
+               <div class="p_name">
+                 <a href="javascript:;">卫新 护色洗衣液 2kg 袋装</a>
+               </div>
+               <p><span>￥32.50</span></p>
+             </li>
+             </li>
+             <li>
+               <div class="p_img">
+               <a href="javascript:;">
+                 <img src="images/products/p005.jpg" alt="">
+               </div>
+               </a>
+               <div class="p_name">
+                 <a href="javascript:;">威露士（Walch） 衣物家居消毒液 3L</a>
+               </div>
+               <p><span>￥69.90</span></p>
+             </li>
+             </li>
+            </ul>
+         </div>
+       </div> 
+      </div>
+      <div class="main clearfix">
+        <div class="main_side">
+      	  <div class="main_side_bar" id="same_brand">
+      	  	<h2>同类其他品牌</h2>
+      	  	<ul class="clearfix">
+      	  		<li><a href="javascript:;">蓝月亮</a></li>
+      	  		<li><a href="javascript:;">汰渍</a></li>
+      	  		<li><a href="javascript:;">碧浪</a></li>
+      	  		<li><a href="javascript:;">卫新</a></li>
+      	  		<li><a href="javascript:;">威露士</a></li>
+      	  		<li><a href="javascript:;">滴露</a></li>
+      	  		<li><a href="javascript:;">奥妙</a></li>
+      	  		<li><a href="javascript:;">雕牌</a></li>
+      	  		<li><a href="javascript:;">洛娃</a></li>
+      	  		<li><a href="javascript:;">金纺</a></li>
+      	  		<li><a href="javascript:;">妈妈壹选</a></li>
+      	  		<li><a href="javascript:;">可柔可顺</a></li>
+      	  		<li><a href="javascript:;">威洁士</a></li>
+      	  		<li><a href="javascript:;">白猫</a></li>
+      	  		<li><a href="javascript:;">绿伞</a></li>
+      	  		<li><a href="javascript:;">亮净</a></li>
+      	  		<li><a href="javascript:;">净安</a></li>
+      	  		<li><a href="javascript:;">好爸爸</a></li>
+      	  		<li><a href="javascript:;">立白</a></li>
+      	  		<li><a href="javascript:;">超能</a></li>
+      	  	</ul>
+      	  </div>
+      	  <div class="main_side_bar">
+      	  	<h2>浏览了该商品的用户最终购买</h2>
+      	  	<ul>
+      	  		<li>
+      	  			<div class="p_img">
+      	  				<img src="images/products/product_01_m.jpg" alt="">
+      	  			</div>
+      	  			<div class="p_name">
+      	  				<a href="">卫新 护色洗衣液 2kg 袋装</a>
+      	  			</div>
+      	  			<p><span>￥32.50</span></p>
+      	  		</li>
+      	  		<li>
+      	  			<div class="p_img">
+      	  				<img src="images/products/product_02_m.jpg" alt="">
+      	  			</div>
+      	  			<div class="p_name">
+      	  				<a href="">威露士（Walch） 衣物除菌液（阳光清香）2.5L送1.5L 加量装</a>
+      	  			</div>
+      	  			<p><span>￥79.9</span></p>
+      	  		</li>
+      	  		<li>
+      	  			<div class="p_img">
+      	  				<img src="images/products/product_01_m.jpg" alt="">
+      	  			</div>
+      	  			<div class="p_name">
+      	  				<a href="">卫新 薰衣草洗衣液 3kg</a>
+      	  			</div>
+      	  			<p><span>￥61</span></p>
+      	  		</li>
+      	  		<li>
+      	  			<div class="p_img">
+      	  				<img src="images/products/product_01_m.jpg" alt="">
+      	  			</div>
+      	  			<div class="p_name">
+      	  				<a href="">蓝月亮 亮白增艳洗衣液（自然清香）3kg/瓶</a>
+      	  			</div>
+      	  			<p><span>￥51.80</span></p>
+      	  		</li>
+      	  	</ul>
+      	  </div>
+      	  <div class="main_side_bar" id="rander">
+      	    <h2>衣物清洁排行榜</h2>
+      	    <ul class="rander_nav clearfix">
+      	    	<li class="on">同价位</li>
+      	    	<li>同品牌</li>
+      	    	<li>同类别</li>
+      	    </ul>
+      	    <ul class="rander_info" style="display: block;">
+      	    	<li class="forward">
+      	    		<s>1</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s1.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">威露士洗衣液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li class="forward">
+      	    		<s>2</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s2.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">卫新洗衣液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li class="forward">
+      	    		<s>3</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s7.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">蓝月亮洗衣液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li>
+      	    		<s>4</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s3.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">威露士消毒液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li>
+      	    		<s>5</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s4.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">卫新洗衣液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li>
+      	    		<s>6</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s5.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">威露士衣物除菌夜</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li>
+      	    		<s>7</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s6.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">卫新洗衣液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    </ul>
+      	    <ul class="rander_info">
+      	    	<li class="forward">
+      	    		<s>1</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s5.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">威露士洗衣液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li class="forward">
+      	    		<s>2</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s4.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">卫新洗衣液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li class="forward">
+      	    		<s>3</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s2.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">蓝月亮洗衣液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li>
+      	    		<s>4</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s3.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">威露士消毒液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li>
+      	    		<s>5</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s8.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">卫新洗衣液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li>
+      	    		<s>6</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s9.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">威露士衣物除菌夜</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li>
+      	    		<s>7</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s1.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">卫新洗衣液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    </ul>
+      	    <ul class="rander_info">
+      	    	<li class="forward">
+      	    		<s>1</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s9.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">威露士洗衣液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li class="forward">
+      	    		<s>2</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s8.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">卫新洗衣液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li class="forward">
+      	    		<s>3</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s3.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">蓝月亮洗衣液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li>
+      	    		<s>4</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s4.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">威露士消毒液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li>
+      	    		<s>5</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s2.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">卫新洗衣液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li>
+      	    		<s>6</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s1.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">威露士衣物除菌夜</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    	<li>
+      	    		<s>7</s>
+      	    		<div class="p_img">
+      	    			<img src="images/products/product-s7.jpg" alt="">
+      	    		</div>
+      	    		<div class="p_name">
+      	    			<a href="">卫新洗衣液</a>
+      	    		</div>
+      	    		<div class="p_price">
+      	    			<span>￥59.90</span>
+      	    		</div>
+      	    	</li>
+      	    </ul>
+      	  </div>
+      	  <div class="main_side_bar">
+      	  	<h2>购买了该商品的用户还浏览了</h2>
+      	  	<ul>
+      	  		<li>
+      	  			<div class="p_img">
+      	  				<img src="images/products/product_01_m.jpg" alt="">
+      	  			</div>
+      	  			<div class="p_name">
+      	  				<a href="">卫新 护色洗衣液 2kg 袋装</a>
+      	  			</div>
+      	  			<p><span>￥32.50</span></p>
+      	  		</li>
+      	  		<li>
+      	  			<div class="p_img">
+      	  				<img src="images/products/product_02_m.jpg" alt="">
+      	  			</div>
+      	  			<div class="p_name">
+      	  				<a href="">威露士（Walch） 衣物除菌液（阳光清香）2.5L送1.5L 加量装</a>
+      	  			</div>
+      	  			<p><span>￥79.9</span></p>
+      	  		</li>
+      	  		<li>
+      	  			<div class="p_img">
+      	  				<img src="images/products/product_01_m.jpg" alt="">
+      	  			</div>
+      	  			<div class="p_name">
+      	  				<a href="">卫新 薰衣草洗衣液 3kg</a>
+      	  			</div>
+      	  			<p><span>￥61</span></p>
+      	  		</li>
+      	  		<li>
+      	  			<div class="p_img">
+      	  				<img src="images/products/product_01_m.jpg" alt="">
+      	  			</div>
+      	  			<div class="p_name">
+      	  				<a href="">蓝月亮 亮白增艳洗衣液（自然清香）3kg/瓶</a>
+      	  			</div>
+      	  			<p><span>￥51.80</span></p>
+      	  		</li>
+      	  	</ul>
+      	  </div>
+      	  <div class="main_side_bar">
+      	    <h2>浏览了该商品的用户还浏览</h2>
+      	  	<ul>
+      	  		<li>
+      	  			<div class="p_img">
+      	  				<img src="images/products/product_01_m.jpg" alt="">
+      	  			</div>
+      	  			<div class="p_name">
+      	  				<a href="">卫新 护色洗衣液 2kg 袋装</a>
+      	  			</div>
+      	  			<p><span>￥32.50</span></p>
+      	  		</li>
+      	  		<li>
+      	  			<div class="p_img">
+      	  				<img src="images/products/product_02_m.jpg" alt="">
+      	  			</div>
+      	  			<div class="p_name">
+      	  				<a href="">威露士（Walch） 衣物除菌液（阳光清香）2.5L送1.5L 加量装</a>
+      	  			</div>
+      	  			<p><span>￥79.9</span></p>
+      	  		</li>
+      	  		<li>
+      	  			<div class="p_img">
+      	  				<img src="images/products/product_01_m.jpg" alt="">
+      	  			</div>
+      	  			<div class="p_name">
+      	  				<a href="">卫新 薰衣草洗衣液 3kg</a>
+      	  			</div>
+      	  			<p><span>￥61</span></p>
+      	  		</li>
+      	  		<li>
+      	  			<div class="p_img">
+      	  				<img src="images/products/product_01_m.jpg" alt="">
+      	  			</div>
+      	  			<div class="p_name">
+      	  				<a href="">蓝月亮 亮白增艳洗衣液（自然清香）3kg/瓶</a>
+      	  			</div>
+      	  			<p><span>￥51.80</span></p>
+      	  		</li>
+      	  	</ul>
+      	  </div>
+      	  <div class="img"><a href=""><img src="images/products/left_p001.jpg" alt=""></a></div>
+      	  <div class="img"><a href=""><img src="images/products/left_p002.jpg" alt=""></a></div>
+      	  <div class="img"><a href=""><img src="images/products/left_p003.jpg" alt=""></a></div>
+        </div>
+        <div class="main_body clearfix" id="main_body">
+            <div class="main_tap_wrap" id="main_fixed_draw">
+              <ul class="main_tap clearfix">
+              <li id="detail_info_draw" class="on">
+                <a href="javascript:;">商品介绍</a>
+              </li>
+              <li id="spec_para_draw">
+                <a href="javascript:;">规格参数</a>
+              </li>
+              <li id="packing_list_draw">
+                <a href="javascript:;">包装清单</a>
+              </li>
+              <li id="comment_draw">
+                <a href="javascript:;">商品评价(<span id="comment_num">106</span>)</a>
+              </li>
+              <li id="after_sale_draw">
+                <a href="javascript:;">售后保障</a>
+              </li>
+              <div class="main_buy_car">
+                <div id="m_buy_car_draw" onmousemove="showHide('m_buy_car','block')" onmouseout="showHide('m_buy_car','none')">
+                  <a href=""></a>
+                  <s></s>
+                </div>
+                <div id="m_buy_car" class="clearfix">
+                  <div class="p_img">
+                     <img src="images/products/product_01_m.jpg" alt="">
+                  </div>
+                  <div class="p_name">
+                    <a href="">卫新 薰衣草洗衣液 4.26kg</a>
+                  </div>
+                  <div class="p_price">
+                    京东价：<span>￥59.90</span>
+                  </div>
+                </div>
+              </div>
+              <div class="main_appjd">
+                <div id="m_appjd_draw" onmouseover="showHide('m_appjd','block')" onmouseout="showHide('m_appjd','none')">
+                  <a href="">客户端首单 满59送59</a>
+                  <s></s>
+                </div>
+                <div id="m_appjd">
+                  <img src="images/app_jd_wangyin.png" alt="">
+                </div>
+              </div>
+            </ul>
+            </div> 
+           <div id="detail_info" class="main_show">
+             <div class="clearfix"><div class="detail_infos clearfix" id="detail_info1">
+              <div class="word_info">
+                <ul class="clearfix">
+                  <li>商品名称：卫新洗衣液</li>
+                  <li>商品编号：1039778</li>
+                  <li>品牌： 卫新</li>
+                  <li>上架时间：2014-01-23 16:28:06</li>
+                  <li>商品毛重：4.55kg</li>
+                  <li>商品产地：广东省从化市</li>
+                  <li>类别：手洗洗衣液，机洗洗衣液</li>
+                  <li>规格：3kg以上</li>
+                  <li>香型：香味</li>
+                </ul>
+                <p><a href="#">更多参数&gt;&gt;</a></p>
+              </div>
+              <div><img src="images/618info.jpg" alt=""></div>
+              <div class="img_detail clearfix" id="img_detail">
+                <div class="detail_left clearfix">
+                 <p><span></span>如果您发现商品信息不准确，<a href="">欢迎纠错</a></p>
+                 <div class="img clearfix">
+                    <img src="images/img01.jpg" alt="">
+                    <img src="images/img02.jpg" alt="">
+                    <div class="clearfix">
+                      <img src="images/imgs01.jpg" alt="">
+                      <img src="images/imgs02.jpg" alt="">
+                      <img src="images/imgs03.jpg" alt="">
+                      <img src="images/imgs04.jpg" alt="">
+                      <img src="images/imgs05.jpg" alt="">
+                      <img src="images/imgs06.jpg" alt="">
+                    </div>
+                    <img src="images/img03.jpg" alt="">
+                 </div>
+                    <!-- <div class="clear"></div> -->
+                 <div id="product_infomation">
+                      <p><span>产品信息</span><small>Product Information</small></p>
+                      <div class="clearfix">
+                        <img src="images/xunyicao1.jpg" alt="">
+                        <div>
+                          <h3>卫新 薰衣草洗衣液 （老包装 随机发货 请以收到实物为准）</h3>
+                          <p>净含量：4.26kg</p>
+                          <p>产品功效：</p>
+                          <p>
+                            1.添加法国薰衣草精油成分，令衣物充满芬 
+                            芳舒缓的怡人气息。
+                                                      </p>
+                                                      <p>
+                                                        2.纳米智能分解技术，深层渗透衣物纤
+                            维，自动逐一瓦解各种顽固污渍及细菌，不损衣物纤维，净
+                            白亮色。 3.去渍防护配方，减少污渍吸附在衣物表面，
+                            穿着时持久洁净更耐脏。 4.中性配方，成分更温和，温柔呵
+                            护家人皮肤。 5.全新低泡技术，用量少，易漂无残留。 
+                            6.含柔顺成分，令衣物恢复天然弹性不易变形，易熨更柔顺
+                            7.环保更健康，不含磷、荧光增白剂。 
+                          </p>
+                          <p>箱规：4支/箱</p>
+                          <p class="last-p">
+                            更多容量选择: 3kg 4.26kg
+                          </p>
+                        </div>
+                      </div>
+                      <div class="clearfix">
+                        <img src="images/xunyicao2.jpg" alt="">
+                        <div>
+                          <h3>卫新 薰衣草洗衣液 （老包装 随机发货)</h3>
+                          <p>净含量：4.26kg</p>
+                          <p>产品功效：</p>
+                          <p>
+                            1.添加法国薰衣草精油成分，令衣物充满芬 
+                            芳舒缓的怡人气息。
+                          </p>
+                          <p>
+                            2.纳米智能分解技术，深层渗透衣物纤
+                            维，自动逐一瓦解各种顽固污渍及细菌，不损衣物纤维，净
+                            白亮色。 3.去渍防护配方，减少污渍吸附在衣物表面，
+                            穿着时持久洁净更耐脏。 4.中性配方，成分更温和，温柔呵
+                            护家人皮肤。 5.全新低泡技术，用量少，易漂无残留。 
+                            6.含柔顺成分，令衣物恢复天然弹性不易变形，易熨更柔顺
+                            7.环保更健康，不含磷、荧光增白剂。 
+                          </p>
+                          <p>箱规：4支/箱</p>
+                          <p class="last-p">
+                            更多容量选择: 3kg 4.26kg
+                          </p>
+                        </div>
+                      </div>
+                 </div>
+                 <div id="selling_point" class="clearfix">
+                      <p><span>产品特色</span><small>Selling Point</small></p>
+                      <img src="images/point1.jpg" alt="">
+                      <img src="images/point2.jpg" alt="">
+                      <img src="images/point3.jpg" alt="">
+                      <img src="images/point4.jpg" alt="">
+                      <img src="images/point5.jpg" alt="">
+                      <img src="images/point6.jpg" alt="">
+                 </div>
+                 <div id="product_Exhibition">
+                      <p><span>产品展示</span><small>Product Exhibition</small></p>
+                      <img src="images/ex1.jpg" alt="">
+                      <img src="images/ex2.jpg" alt="">
+                      <img src="images/ex3.jpg" alt="">
+                 </div>
+                 <div id="kindly_remind">
+                      <p><span>温馨提示</span><small>Kindly Remind</small></p>
+                      <img src="images/remind.jpg" alt="">
+                 </div>
+                 <div id="brand_intro">
+                      <p><span>品牌介绍</span><small>Brand Introduction</small></p>
+                      <div>
+                        <img src="images/brand1.jpg" alt="">
+                        <h3>威莱为你每一天，未来健康每一天</h3>
+                        <p>威莱集团自进入中国市场以来，一直致力于卫生消毒、家居清洁及个人护理产品的研究。目前，威莱产品已延伸至16大品牌，150多个单品。 与卫生机构密切合作，致力推广健康卫生的家庭生活方式，并积极参与控制减少幼儿疾病感染的研究以及以公共卫生教育为目的的公益活动。</p>
+                      </div>
+                      <img src="images/brand2.jpg" alt="">
+                 </div>
+                </div>
+                <div class="detail_right" id="detail_right">
+                  <ul>
+                    <li><span></span><a href="#product_infomation"><span></span>产品信息</a></li>
+                    <li><span></span><a href="#selling_point"><span></span>产品特色</a></li>
+                    <li><span></span><a href="#product_Exhibition"><span></span>产品展示</a></li>
+                    <li><span></span><a href="#kindly_remind"><span></span>温馨提示</a></li>
+                    <li><span></span><a href="#brand_intro"><span></span>品牌介绍</a></li>
+                  </ul>
+                </div>
+              </div>
+             </div></div>
+           </div>
+           <div id="spec_para" class="main_show" style="display: none;">
+             <p><span></span>如果您发现商品信息不准确，<a href="">欢迎纠错</a></p>
+             <table>
+               <tbody>
+                 <tr><td colspan="2" class="t-head">主体</td></tr>
+                 <tr>
+                   <td class="left-table">品牌</td>
+                   <td>威露士（Walch）</td>
+                 </tr>
+                 <tr>
+                   <td class="left-table">类别</td>
+                   <td>洗衣液</td>
+                 </tr>
+                 <tr>
+                   <td class="left-table">产品规格（ml/kg）</td>
+                   <td>4.26kg</td>
+                 </tr>
+                 <tr>
+                   <td class="left-table">产品包装尺寸（cm）</td>
+                   <td>254*117*326</td>
+                 </tr>
+                 <tr>
+                   <td class="left-table">香型</td>
+                   <td>薰衣草</td>
+                 </tr>
+               </tbody>
+             </table>
+           </div>
+           <div id="packing_list" class="main_show" style="display: none;">
+             <p>卫新 薰衣草洗衣液 4.26kg*1</p>
+           </div>
+           <div id="after_sale" class="main_show" style="display: none;">
+             <p>本产品全国联保，享受三包服务，质保期为：无质保</p>
+           </div>
+           <div class="serve-agree">
+              <dl>
+                <dt class="zhengpin"><span></span><strong>正品行货</strong></dt>
+                <dd>
+                  京东商城向您保证所售商品均为正品行货，京东自营商品开具机打发票或电子发票。
+                </dd>
+                <dt class="lianbao"><span></span><strong>全国联保</strong></dt>
+                <dd>
+                  <p>
+                    凭质保证书及京东商城发票，可享受全国联保服务（奢侈品、钟表除外；奢侈品、钟表由京东联系保修，享受法定三包售后服务），与您亲临商场选购的商品享受相同的质量保证。京东商城还为您提供具有竞争力的商品价格和运费政策，请您放心购买！
+                  </p>
+                  <p>
+                    注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！
+                  </p>
+                </dd>
+                <dt class="tuihuo"><span></span><strong>无忧退换货</strong></dt>
+                <dd>
+                  客户购买京东自营商品7日内（含7日，自客户收到商品之日起计算），在保证商品完好的前提下，可无理由退货。（部分商品除外，详情请见各商品细则）
+                </dd>
+              </dl>
+           </div>
+           <div class="statement">
+             <div>
+               <h4>权利声明：</h4>
+               <p>
+                 京东上的所有商品信息、客户评价、商品咨询、网友讨论等内容，是京东重要的经营资源，未经许可，禁止非法转载使用。
+               </p>
+               <p>
+                <span>
+                 注：
+                </span>
+                本站商品信息均来自于合作方，其真实性、准确性和合法性由信息拥有者（合作方）负责。本站不提供任何保证，并不承担任何法律责任。
+               </p>
+             </div>
+             <div>
+               <h4>价格说明：</h4>
+               <p>
+                <span>
+                 京东价：
+                </span>
+                京东价为商品的销售价，是您最终决定是否购买商品的依据。
+               </p>
+               <p>
+                <span>
+                 划线价：
+                </span>
+                商品展示的划横线价格为参考价，该价格可能是品牌专柜标价、商品吊牌价或由品牌供应商提供的正品零售价（如厂商指导价、建议零售价等）或该商品在京东平台上曾经展示过的销售价；由于地区、时间的差异性和市场行情波动，品牌专柜标价、商品吊牌价等可能会与您购物时展示的不一致，该价格仅供您参考。
+               </p>
+               <p>
+                <span>
+                 折扣：
+                </span>
+                如无特殊说明，折扣指销售商在原价、或划线价（如品牌专柜标价、商品吊牌价、厂商指导价、厂商建议零售价）等某一价格基础上计算出的优惠比例或优惠金额；如有疑问，您可在购买前联系销售商进行咨询。
+               </p>
+               <p>
+                <span>
+                 异常问题：
+                </span>
+                商品促销信息以商品详情页“促销”栏中的信息为准；商品的具体售价以订单结算页价格为准；如您发现活动商品售价或促销信息有异常，建议购买前先联系销售商咨询。
+               </p>
+             </div>
+           </div>
+           <div class="buy_comment">
+             <h2>商品评论</h2>
+             <div class="comment_intro clearfix">
+               <div class="haopindu">
+                 <strong>98%</strong>好评度
+               </div>
+               <div class="comm_progress">
+                 <dt><span>好评(98%)</span></dt><dd><div class="progress1"></div></dd>
+                 <dt><span>中评(1%)&nbsp;&nbsp;</span></dt><dd><div class="progress2"></div></dd>
+                 <dt><span>差评(1%)&nbsp;&nbsp;</span></dt><dd><div class="progress3"></div></dd>
+               </div>
+               <div class="yinxiang">
+                 <span>买家印象：</span>
+                 <ul>
+                   <li>洗涤效果好<span>(6000)</span></li>
+                   <li>比超市便宜<span>(2552)</span></li>
+                   <li>味道不错<span>(2360)</span></li>
+                   <li>洗衣效果好<span>(1936)</span></li>
+                   <li>洗衣服干净<span>(1890)</span></li>
+                   <li>质量不错<span>(1811)</span></li>
+                   <li>比洗衣粉好<span>(1605)</span></li>
+                   <li>去污能力强<span>(1604)</span></li>
+                   <li>好清洗<span>(1509)</span></li>
+                   <li>好清洗<span>(1509)</span></li>
+                 </ul>
+               </div>
+             </div>
+             <div class="comment_tap" id="comment_tap">
+               <a href="javascript:;" class="on">全部评价(197992)</a>
+               <a href="javascript:;">晒图(500)</a>
+               <a href="javascript:;">好评(193752)</a>
+               <a href="javascript:;">中评(2766)</a>
+               <a href="javascript:;">差评(1474)</a>
+               <input type="checkbox">只看当前商品评价
+             </div>
+             <div id="all_comment" class="comment_info">
+                <div class="comment_item">
+                 <div class="comment_item_w">
+                   <div class="comment_item_main clearfix">
+                     <div class="comment1">
+                       <P class="star-comm"></P>
+                       <P>收货7天后评论</P>
+                       <P>2015-04-22 13:57</P>
+                       <P>薰衣草4.26kg</P>
+                     </div>
+                     <div class="comment2">
+                       <p>一直用这款，很好，一次比一次更便宜。</p>
+                       <p class="hide-comm"><a href="javascript:;">点赞（81）</a><a href="javascript:;"> 回复（47）</a></p>
+                     </div>
+                     <div class="comment3">
+                       <p><img src="images/touxiang1.gif" alt="">&nbsp;&nbsp;肉***盔</p>
+                       <p><span>金牌会员</span>四川</p>
+                       <p>来自京东Android客户端</p>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="comment_item">
+                 <div class="comment_item_w">
+                   <div class="comment_item_main clearfix">
+                     <div class="comment1">
+                       <P class="star-comm"></P>
+                       <P>收货11天后评论</P>
+                       <P>2015-04-18 18:33</P>
+                       <P>薰衣草4.26kg</P>
+                     </div>
+                     <div class="comment2">
+                       <p>便宜，好用。很划算。</p>
+                       <p class="hide-comm"><a href="javascript:;">点赞（81）</a><a href="javascript:;"> 回复（47）</a></p>
+                       <p class="hide-comm center-bottom">
+                         <a href="javascript:;">查看全部回复</a>
+                       </p>
+                     </div>
+                     <div class="comment3">
+                       <p><img src="images/touxiang1.gif" alt="">&nbsp;&nbsp;灰***4</p>
+                       <p><span>钻石会员</span>山东</p>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="comment_item">
+                 <div class="comment_item_w">
+                   <div class="comment_item_main clearfix">
+                     <div class="comment1">
+                       <P class="star-comm"></P>
+                       <P>收货14天后评论</P>
+                       <P>2015-04-15 15:15</P>
+                       <P>薰衣草4.26kg</P>
+                     </div>
+                     <div class="comment2">
+                       <p>    
+                         很喜欢京东快递，态度太好了，而且只要是我定的东东，配送员总是特别耐心。给他们一个赞
+                       </p>
+                       <p class="hide-comm"><a href="javascript:;">点赞（81）</a><a href="javascript:;"> 回复（47）</a></p>
+                     </div>
+                     <div class="comment3">
+                       <p><img src="images/touxiang1.gif" alt="">&nbsp;&nbsp;j***z</p>
+                       <p><span>铜牌会员</span></p>
+                       <p>来自京东Android客户端</p>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="comment_item">
+                 <div class="comment_item_w">
+                   <div class="comment_item_main clearfix">
+                     <div class="comment1">
+                       <P class="star-comm"></P>
+                       <P>收货14天后评论</P>
+                       <P>2015-04-15 15:15</P>
+                       <P>薰衣草4.26kg</P>
+                     </div>
+                     <div class="comment2">
+                       <p>    
+                         很喜欢京东快递，态度太好了，而且只要是我定的东东，配送员总是特别耐心。给他们一个赞
+                       </p>
+                       <div class="clearfix" id="hide_img_comm">
+                         <div class="hide_img_comm">
+                           <img src="images/comment_s01.jpg" alt="">
+                         </div>
+                         <div class="hide_img_comm">
+                           <img src="images/comment_s02.jpg" alt="">
+                         </div>
+                         <div class="hide_img_comm">
+                           <img src="images/comment_s03.jpg" alt="">
+                         </div>
+                       </div>
+                       <div id="show_img_comm" style="display: none;">
+                         <div class="img_comm_tap clearfix">
+                           <div class="prev-cur"></div>
+                           <div class="show_img_comm">
+                             <img src="images/comment_s01.jpg" alt="">
+                           </div>
+                           <div class="show_img_comm">
+                             <img src="images/comment_s02.jpg" alt="">
+                           </div>
+                           <div class="show_img_comm">
+                             <img src="images/comment_s03.jpg" alt="">
+                           </div>
+                           <div class="next-cur"></div>
+                         </div>
+                         <div class="control-img">
+                           <a href="javascript:;" id="close_img_comm">收起</a>
+                           <a href="javascript:;" id="open_new">查看大图</a>
+                           <a href="javascript:;" id="left_img_comm">向左旋转</a>
+                           <a href="javascript:;" id="right_img_comm">向右旋转</a>
+                         </div>
+                         <div class="img_comm_container" id="img_comm_container">
+                           <img src="images/comment_b01.jpg" alt="">
+                           <img src="images/comment_b02.jpg" alt="" style="display: none;">
+                           <img src="images/comment_b03.jpg" alt="" style="display: none;">
+                         </div>
+                       </div>
+                       <p class="hide-comm"><a href="javascript:;">点赞（81）</a><a href="javascript:;"> 回复（47）</a></p>
+                     </div>
+                     <div class="comment3">
+                       <p><img src="images/touxiang1.gif" alt="">&nbsp;&nbsp;cv***p</p>
+                       <p><span>铜牌会员</span></p>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="comm_page clearfix ">
+                  <div>
+                    <a href="javascript:;" class="cur">1</a>
+                    <a href="javascript:;">2</a>
+                    <a href="javascript:;">3</a>
+                    <a href="javascript:;">4</a>
+                    <a href="javascript:;">5</a>
+                    <a href="javascript:;">6</a>...
+                    <a href="javascript:;">下一页</a>
+                  </div>
+                </div>
+             </div>
+             <div id="img_comment" class="comment_info" style="display: none">
+               <div class="img-comment-tap clearfix">
+                 <div class="prev-cur" id="prev_cur"></div>
+                 <div class="img-comment-wrap">
+                   <ul class="clearfix">
+                     <li class="on"><img src="images/imgcom_s01.jpg" alt=""></li>
+                     <li><img src="images/imgcom_s02.jpg" alt=""></li>
+                     <li><img src="images/imgcom_s03.jpg" alt=""></li>
+                     <li><img src="images/imgcom_s04.jpg" alt=""></li>
+                     <li><img src="images/imgcom_s05.jpg" alt=""></li>
+                     <li><img src="images/imgcom_s06.jpg" alt=""></li>
+                     <li><img src="images/imgcom_s07.jpg" alt=""></li>
+                     <li><img src="images/imgcom_s08.jpg" alt=""></li>
+                     <li><img src="images/imgcom_s09.jpg" alt=""></li>
+                     <li><img src="images/imgcom_s10.jpg" alt=""></li>
+                     <li><img src="images/imgcom_s11.jpg" alt=""></li>
+                     <li><img src="images/imgcom_s12.jpg" alt=""></li>
+                   </ul>
+                 </div>
+                 <div class="next-cur" id="next_cur"></div>
+               </div>
+               <div id="img_comment_container">
+                 <img src="images/imgcom_b1.jpg" alt="">
+                 <div class="control_page clearfix">
+                  <div id="left_page">
+                   
+                  </div>
+                  <div id="right_page">
+                   
+                  </div>
+               </div>
+               </div> 
+             </div>
+             <div id="good_comment" class="comment_info" style="display: none">
+                <div class="comment_item">
+                 <div class="comment_item_w">
+                   <div class="comment_item_main clearfix">
+                     <div class="comment1">
+                       <P class="star-comm"></P>
+                       <P>收货7天后评论</P>
+                       <P>2015-04-22 13:57</P>
+                       <P>薰衣草4.26kg</P>
+                     </div>
+                     <div class="comment2">
+                       <p>一直用这款，很好，一次比一次更便宜。</p>
+                       <p class="hide-comm"><a href="javascript:;">点赞（81）</a><a href="javascript:;"> 回复（47）</a></p>
+                     </div>
+                     <div class="comment3">
+                       <p><img src="images/touxiang1.gif" alt="">&nbsp;&nbsp;肉***盔</p>
+                       <p><span>金牌会员</span>四川</p>
+                       <p>来自京东Android客户端</p>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="comment_item">
+                 <div class="comment_item_w">
+                   <div class="comment_item_main clearfix">
+                     <div class="comment1">
+                       <P class="star-comm"></P>
+                       <P>收货11天后评论</P>
+                       <P>2015-04-18 18:33</P>
+                       <P>薰衣草4.26kg</P>
+                     </div>
+                     <div class="comment2">
+                       <p>便宜，好用。很划算。</p>
+                       <p class="hide-comm"><a href="javascript:;">点赞（81）</a><a href="javascript:;"> 回复（47）</a></p>
+                       <p class="hide-comm center-bottom">
+                         <a href="javascript:;">查看全部回复</a>
+                       </p>
+                     </div>
+                     <div class="comment3">
+                       <p><img src="images/touxiang1.gif" alt="">&nbsp;&nbsp;灰***4</p>
+                       <p><span>钻石会员</span>山东</p>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="comment_item">
+                 <div class="comment_item_w">
+                   <div class="comment_item_main clearfix">
+                     <div class="comment1">
+                       <P class="star-comm"></P>
+                       <P>收货14天后评论</P>
+                       <P>2015-04-15 15:15</P>
+                       <P>薰衣草4.26kg</P>
+                     </div>
+                     <div class="comment2">
+                       <p>    
+                         很喜欢京东快递，态度太好了，而且只要是我定的东东，配送员总是特别耐心。给他们一个赞
+                       </p>
+                       <p class="hide-comm"><a href="javascript:;">点赞（81）</a><a href="javascript:;"> 回复（47）</a></p>
+                     </div>
+                     <div class="comment3">
+                       <p><img src="images/touxiang1.gif" alt="">&nbsp;&nbsp;j***z</p>
+                       <p><span>铜牌会员</span></p>
+                       <p>来自京东Android客户端</p>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="comm_page clearfix ">
+                  <div>
+                    <a href="javascript:;" class="cur">1</a>
+                    <a href="javascript:;">2</a>
+                    <a href="javascript:;">3</a>
+                    <a href="javascript:;">4</a>
+                    <a href="javascript:;">5</a>
+                    <a href="javascript:;">6</a>...
+                    <a href="javascript:;">下一页</a>
+                  </div>
+                </div>
+             </div>
+             <div id="middle_comment" class="comment_info" style="display: none">
+                <div class="comment_item">
+                 <div class="comment_item_w">
+                   <div class="comment_item_main clearfix">
+                     <div class="comment1">
+                       <P class="star-comm star-comm4"></P>
+                       <P>收货7天后评论</P>
+                       <P>2015-04-22 13:57</P>
+                       <P>薰衣草4.26kg</P>
+                     </div>
+                     <div class="comment2">
+                       <p>一直用这款，很好，一次比一次更便宜。</p>
+                       <p class="hide-comm"><a href="javascript:;">点赞（81）</a><a href="javascript:;"> 回复（47）</a></p>
+                     </div>
+                     <div class="comment3">
+                       <p><img src="images/touxiang1.gif" alt="">&nbsp;&nbsp;肉***盔</p>
+                       <p><span>金牌会员</span>四川</p>
+                       <p>来自京东Android客户端</p>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="comment_item">
+                 <div class="comment_item_w">
+                   <div class="comment_item_main clearfix">
+                     <div class="comment1">
+                       <P class="star-comm star-comm3"></P>
+                       <P>收货11天后评论</P>
+                       <P>2015-04-18 18:33</P>
+                       <P>薰衣草4.26kg</P>
+                     </div>
+                     <div class="comment2">
+                       <p>便宜，好用。很划算。</p>
+                       <p class="hide-comm"><a href="javascript:;">点赞（81）</a><a href="javascript:;"> 回复（47）</a></p>
+                       <p class="hide-comm center-bottom">
+                         <a href="javascript:;">查看全部回复</a>
+                       </p>
+                     </div>
+                     <div class="comment3">
+                       <p><img src="images/touxiang1.gif" alt="">&nbsp;&nbsp;灰***4</p>
+                       <p><span>钻石会员</span>山东</p>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="comment_item">
+                 <div class="comment_item_w">
+                   <div class="comment_item_main clearfix">
+                     <div class="comment1">
+                       <P class="star-comm star-comm3"></P>
+                       <P>收货14天后评论</P>
+                       <P>2015-04-15 15:15</P>
+                       <P>薰衣草4.26kg</P>
+                     </div>
+                     <div class="comment2">
+                       <p>    
+                         很喜欢京东快递，态度太好了，而且只要是我定的东东，配送员总是特别耐心。给他们一个赞
+                       </p>
+                       <p class="hide-comm"><a href="javascript:;">点赞（81）</a><a href="javascript:;"> 回复（47）</a></p>
+                     </div>
+                     <div class="comment3">
+                       <p><img src="images/touxiang1.gif" alt="">&nbsp;&nbsp;j***z</p>
+                       <p><span>铜牌会员</span></p>
+                       <p>来自京东Android客户端</p>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="comm_page clearfix ">
+                  <div>
+                    <a href="javascript:;" class="cur">1</a>
+                    <a href="javascript:;">2</a>
+                    <a href="javascript:;">3</a>
+                    <a href="javascript:;">4</a>
+                    <a href="javascript:;">5</a>
+                    <a href="javascript:;">6</a>...
+                    <a href="javascript:;">下一页</a>
+                  </div>
+                </div>
+             </div>
+             <div id="bad_comment" class="comment_info" style="display: none">
+                <div class="comment_item">
+                 <div class="comment_item_w">
+                   <div class="comment_item_main clearfix">
+                     <div class="comment1">
+                       <P class="star-comm star-comm2"></P>
+                       <P>收货7天后评论</P>
+                       <P>2015-04-22 13:57</P>
+                       <P>薰衣草4.26kg</P>
+                     </div>
+                     <div class="comment2">
+                       <p>一直用这款，很好，一次比一次更便宜。</p>
+                       <p class="hide-comm"><a href="javascript:;">点赞（81）</a><a href="javascript:;"> 回复（47）</a></p>
+                     </div>
+                     <div class="comment3">
+                       <p><img src="images/touxiang1.gif" alt="">&nbsp;&nbsp;肉***盔</p>
+                       <p><span>金牌会员</span>四川</p>
+                       <p>来自京东Android客户端</p>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="comment_item">
+                 <div class="comment_item_w">
+                   <div class="comment_item_main clearfix">
+                     <div class="comment1">
+                       <P class="star-comm star-comm1"></P>
+                       <P>收货11天后评论</P>
+                       <P>2015-04-18 18:33</P>
+                       <P>薰衣草4.26kg</P>
+                     </div>
+                     <div class="comment2">
+                       <p>便宜，好用。很划算。</p>
+                       <p class="hide-comm"><a href="javascript:;">点赞（81）</a><a href="javascript:;"> 回复（47）</a></p>
+                       <p class="hide-comm center-bottom">
+                         <a href="javascript:;">查看全部回复</a>
+                       </p>
+                     </div>
+                     <div class="comment3">
+                       <p><img src="images/touxiang1.gif" alt="">&nbsp;&nbsp;灰***4</p>
+                       <p><span>钻石会员</span>山东</p>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="comment_item">
+                 <div class="comment_item_w">
+                   <div class="comment_item_main clearfix">
+                     <div class="comment1">
+                       <P class="star-comm star-comm1"></P>
+                       <P>收货14天后评论</P>
+                       <P>2015-04-15 15:15</P>
+                       <P>薰衣草4.26kg</P>
+                     </div>
+                     <div class="comment2">
+                       <p>    
+                         很喜欢京东快递，态度太好了，而且只要是我定的东东，配送员总是特别耐心。给他们一个赞
+                       </p>
+                       <p class="hide-comm"><a href="javascript:;">点赞（81）</a><a href="javascript:;"> 回复（47）</a></p>
+                     </div>
+                     <div class="comment3">
+                       <p><img src="images/touxiang1.gif" alt="">&nbsp;&nbsp;j***z</p>
+                       <p><span>铜牌会员</span></p>
+                       <p>来自京东Android客户端</p>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="comm_page clearfix ">
+                  <div>
+                    <a href="javascript:;" class="cur">1</a>
+                    <a href="javascript:;">2</a>
+                    <a href="javascript:;">3</a>
+                    <a href="javascript:;">4</a>
+                    <a href="javascript:;">5</a>
+                    <a href="javascript:;">6</a>...
+                    <a href="javascript:;">下一页</a>
+                  </div>
+                </div>
+             </div>
+           </div>
+           <div class="zixun" id="zixun">
+             <ul class="main_tap clearfix" id="zixun_tap">
+               <li class="on"><a href="javascript:;">全部购买咨询</a></li>
+               <li><a href="javascript:;">商品咨询</a></li>
+               <li><a href="javascript:;">库存配送</a></li>
+               <li><a href="javascript:;">支付</a></li>
+               <li><a href="javascript:;">发票保修</a></li>
+               <input type="text">
+               <button>搜索</button>  
+             </ul>
+             <p>
+               <strong>温馨提示:</strong>
+               因厂家更改产品包装、产地或者更换随机附件等没有任何提前通知，且每位咨询者购买情况、提问时间等不同，为此以下回复仅对提问者3天内有效，其他网友仅供参考！若由此给您带来不便请多多谅解，谢谢！
+             </p>
+             <div class="zixun_item">
+               <ul>
+                 <li>
+                   <p class="zixun1">
+                     网　　友：康玲422 <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">用洗衣液洗过，还需要用去除静电泡衣服吗？
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 可以搭配使用的亲</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+                 <li>
+                   <p class="zixun1">
+                     网　　友：风神羽翼 <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">之前买的4kg是38.9，现在怎么这么贵了
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 您好,，价格的制定是由产品的销售和成本来制定的，因商品的批次等情况不同，商品的价格存在一定的差异的，请您谅解。祝您购物愉快！</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+                 <li>
+                   <p class="zixun1">
+                     网　　友：豆豆的小屋屋 <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">可以机洗吗？是低泡吗？
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 您好！机洗手洗都可以的，泡沫适中。感谢您对京东的支持！祝您购物愉快！</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+                 <li>
+                   <p class="zixun1">
+                     网　　友：奋勇直击 <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">含荧光剂吗
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 您好！我们商品不添加荧光剂的哦，请您放心使用。感谢您对京东的支持！祝您购物愉快！</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+                 <li>
+                   <p class="zixun1">
+                     网　　友：奋勇直击 <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">含荧光剂吗
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 您好！我们商品不添加荧光剂的哦，请您放心使用。感谢您对京东的支持！祝您购物愉快！</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+                 <li>
+                   <p class="zixun1">
+                     网　　友：jd0440360 <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">请问活动满199减50，我刚下单199元怎么没减
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 您好，建议看下是否此商品不参与活动或者购物车中有其他商品不参与此活动？感谢您对京东的支持！祝您购物愉快！</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+                 <li>
+                   <p class="zixun1">
+                     网　　友：jd_137067yxq <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">你好 问下 4.2kg的怎么比3kg便宜
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 您好！因为二者参加的促销活动不同，4.26kg洗衣液是爆款直降，3kg洗衣液参加的是满减活动。感谢您对京东的支持！祝您购物愉快！</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+                 <li>
+                   <p class="zixun1">
+                     网　　友：jd_139804wpp <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">为什么满了不减
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 您好！该商品不参加满减活动的。感谢您对京东的支持！祝您购物愉快！</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+               </ul>
+               <div class="more_all">
+                 共157条 <a href="">浏览所有咨询信息>></a>
+               </div>
+             </div>
+             <div class="zixun_item" style="display: none;">
+               <ul>
+                 <li>
+                   <p class="zixun1">
+                     网　　友：康玲422 <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">用洗衣液洗过，还需要用去除静电泡衣服吗？
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 可以搭配使用的亲</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+                 <li>
+                   <p class="zixun1">
+                     网　　友：风神羽翼 <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">之前买的4kg是38.9，现在怎么这么贵了
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 您好,，价格的制定是由产品的销售和成本来制定的，因商品的批次等情况不同，商品的价格存在一定的差异的，请您谅解。祝您购物愉快！</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+                 <li>
+                   <p class="zixun1">
+                     网　　友：豆豆的小屋屋 <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">可以机洗吗？是低泡吗？
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 您好！机洗手洗都可以的，泡沫适中。感谢您对京东的支持！祝您购物愉快！</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+                 <li>
+                   <p class="zixun1">
+                     网　　友：奋勇直击 <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">含荧光剂吗
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 您好！我们商品不添加荧光剂的哦，请您放心使用。感谢您对京东的支持！祝您购物愉快！</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+               </ul>
+               <div class="more_all">
+                 共150条 <a href="">浏览所有咨询信息>></a>
+               </div>
+             </div>
+             <div class="zixun_item" style="display: none;">
+               <ul>
+                  <li>
+                   <p class="zixun1">
+                     网　　友：奋勇直击 <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">含荧光剂吗
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 您好！我们商品不添加荧光剂的哦，请您放心使用。感谢您对京东的支持！祝您购物愉快！</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+                 <li>
+                   <p class="zixun1">
+                     网　　友：jd0440360 <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">请问活动满199减50，我刚下单199元怎么没减
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 您好，建议看下是否此商品不参与活动或者购物车中有其他商品不参与此活动？感谢您对京东的支持！祝您购物愉快！</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+                 <li>
+                   <p class="zixun1">
+                     网　　友：jd_137067yxq <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">你好 问下 4.2kg的怎么比3kg便宜
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 您好！因为二者参加的促销活动不同，4.26kg洗衣液是爆款直降，3kg洗衣液参加的是满减活动。感谢您对京东的支持！祝您购物愉快！</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+                 <li>
+                   <p class="zixun1">
+                     网　　友：jd_139804wpp <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">为什么满了不减
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 您好！该商品不参加满减活动的。感谢您对京东的支持！祝您购物愉快！</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+               </ul>
+               <div class="more_all">
+                 共150条 <a href="">浏览所有咨询信息>></a>
+               </div>
+             </div>
+             <div class="zixun_item" style="display: none;">
+               <div class="more_all">
+                 共0条 <a href="">浏览所有咨询信息>></a>
+               </div>
+             </div>
+             <div class="zixun_item" style="display: none;">
+               <ul>
+                 <li>
+                   <p class="zixun1">
+                     网　　友：风神羽翼 <span>2016-04-02 08:22:53</span>
+                   </p>
+                   <p class="zixun2">
+                     咨询内容：<a href="javascript:;">之前买的4kg是38.9，现在怎么这么贵了
+                     </a>
+                   </p>
+                   <div class="zixun3">
+                     <p>京东回复： 您好,市价格都不稳不同，价格存在一定的差异的，请您谅解。能保证我们的货是正品行货。您可以放心。感谢您的支持，祝您购物愉快！</p>
+                     <span>2016-04-02 15:04:03</span>
+                   </div>
+                 </li>
+               </ul>
+               <div class="more_all">
+                 共1条 <a href="">浏览所有咨询信息>></a>
+               </div>
+             </div>
+           </div>
+           <div class="taolun" id="taolun">
+             <ul class="main_tap clearfix" id="taolun_tap">
+               <li class="on"><a href="javascript:;">网友讨论圈</a></li>
+               <li><a href="javascript:;">晒单贴</a></li>
+               <li><a href="javascript:;">讨论贴</a></li>
+               <li><a href="javascript:;">问答贴</a></li>
+               <li><a href="javascript:;">圈子贴</a></li>
+             </ul>
+             <div class="taolun_item">
+               <table>
+                 <tr class="t_head">
+                   <td class="td1">主题</td>
+                   <td class="td2">回复/浏览</td>
+                   <td class="td3">作者</td>
+                   <td class="td4">时间</td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                     <span class="taolun_shai"></span>
+                     <a href="javascript:;">不错，活动买的很实惠，快递一如既往的快，...</a>
+                   </td>
+                   <td class="td2">
+                     4/5
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">jackieliusiyu</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_shai"></span>
+                     <a href="javascript:;">一次又拍了好多，囤货，慢慢用！</a>
+                   </td>
+                   <td class="td2">
+                     3/7
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">520小幸运</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_shai"></span>
+                     <a href="javascript:;">很好，不错，下次继续继续继续</a>
+                   </td>
+                   <td class="td2">
+                     5/8
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">372林州市冯</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_lun"></span>
+                     <a href="javascript:;">京东现在牛B了,居然不送货货上门</a>
+                   </td>
+                   <td class="td2">
+                     9/12
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">youyouf</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_lun"></span>
+                     <a href="javascript:;">双十一还要贵了*？？？</a>
+                   </td>
+                   <td class="td2">
+                     6/7
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">jd136105zac</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_wen"></span>
+                     <a href="javascript:;">*可以买什么呀？？？？</a>
+                   </td>
+                   <td class="td2">
+                     6/7
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">CcUWHmvC</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_lun"></span>
+                     <a href="javascript:;">京东现在牛B了,居然不送货货上门</a>
+                   </td>
+                   <td class="td2">
+                     9/12
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">youyouf</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_lun"></span>
+                     <a href="javascript:;">双十一还要贵了*？？？</a>
+                   </td>
+                   <td class="td2">
+                     6/7
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">jd136105zac</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_wen"></span>
+                     <a href="javascript:;">*可以买什么呀？？？？</a>
+                   </td>
+                   <td class="td2">
+                     6/7
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">CcUWHmvC</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+               </table>
+               <div class="more_all">
+                 <span>有问题要与其他用户讨论？<a href="">[发表帖子]</a></span>
+                 共12930个话题 <a href="">浏览全部话题>></a>
+               </div>
+             </div>
+             <div class="taolun_item" style="display: none;">
+               <table>
+                 <tr class="t_head">
+                   <td class="td1">主题</td>
+                   <td class="td2">回复/浏览</td>
+                   <td class="td3">作者</td>
+                   <td class="td4">时间</td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                     <span class="taolun_shai"></span>
+                     <a href="javascript:;">不错，活动买的很实惠，快递一如既往的快，...</a>
+                   </td>
+                   <td class="td2">
+                     4/5
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">jackieliusiyu</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_shai"></span>
+                     <a href="javascript:;">一次又拍了好多，囤货，慢慢用！</a>
+                   </td>
+                   <td class="td2">
+                     3/7
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">520小幸运</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_shai"></span>
+                     <a href="javascript:;">很好，不错，下次继续继续继续</a>
+                   </td>
+                   <td class="td2">
+                     5/8
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">372林州市冯</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_shai"></span>
+                     <a href="javascript:;">京东现在牛B了,居然不送货货上门</a>
+                   </td>
+                   <td class="td2">
+                     9/12
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">youyouf</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+               </table>
+               <div class="more_all">
+                 <span>有问题要与其他用户讨论？<a href="">[发表帖子]</a></span>
+                 共6930个话题 <a href="">浏览全部话题>></a>
+               </div>
+             </div>
+             <div class="taolun_item" style="display: none;">
+               <table>
+                 <tr class="t_head">
+                   <td class="td1">主题</td>
+                   <td class="td2">回复/浏览</td>
+                   <td class="td3">作者</td>
+                   <td class="td4">时间</td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_lun"></span>
+                     <a href="javascript:;">很好，不错，下次继续继续继续</a>
+                   </td>
+                   <td class="td2">
+                     5/8
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">372林州市冯</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_lun"></span>
+                     <a href="javascript:;">京东现在牛B了,居然不送货货上门</a>
+                   </td>
+                   <td class="td2">
+                     9/12
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">youyouf</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_lun"></span>
+                     <a href="javascript:;">双十一还要贵了*？？？</a>
+                   </td>
+                   <td class="td2">
+                     6/7
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">jd136105zac</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_lun"></span>
+                     <a href="javascript:;">*可以买什么呀？？？？</a>
+                   </td>
+                   <td class="td2">
+                     6/7
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">CcUWHmvC</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_lun"></span>
+                     <a href="javascript:;">京东现在牛B了,居然不送货货上门</a>
+                   </td>
+                   <td class="td2">
+                     9/12
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">youyouf</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_lun"></span>
+                     <a href="javascript:;">双十一还要贵了*？？？</a>
+                   </td>
+                   <td class="td2">
+                     6/7
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">jd136105zac</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+               </table>
+               <div class="more_all">
+                 <span>有问题要与其他用户讨论？<a href="">[发表帖子]</a></span>
+                 共4830个话题 <a href="">浏览全部话题>></a>
+               </div>
+             </div>
+             <div class="taolun_item" style="display: none;">
+               <table>
+                 <tr class="t_head">
+                   <td class="td1">主题</td>
+                   <td class="td2">回复/浏览</td>
+                   <td class="td3">作者</td>
+                   <td class="td4">时间</td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_wen"></span>
+                     <a href="javascript:;">一次又拍了好多，囤货，慢慢用！</a>
+                   </td>
+                   <td class="td2">
+                     3/7
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">520小幸运</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_wen"></span>
+                     <a href="javascript:;">很好，不错，下次继续继续继续</a>
+                   </td>
+                   <td class="td2">
+                     5/8
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">372林州市冯</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+                 <tr class="t_body">
+                   <td class="td1">
+                      <span class="taolun_wen"></span>
+                     <a href="javascript:;">京东现在牛B了,居然不送货货上门</a>
+                   </td>
+                   <td class="td2">
+                     9/12
+                   </td>
+                   <td class="td3">
+                     <a href="javascript:;">youyouf</a>
+                   </td>
+                   <td class="td4">
+                     2016-06-03 18:55:41
+                   </td>
+                 </tr>
+               </table>
+               <div class="more_all">
+                 <span>有问题要与其他用户讨论？<a href="">[发表帖子]</a></span>
+                 共30个话题 <a href="">浏览全部话题>></a>
+               </div>
+             </div>
+             <div class="taolun_item" style="display: none;">
+               <table>
+                 <tr class="t_head">
+                   <td class="td1">主题</td>
+                   <td class="td2">回复/浏览</td>
+                   <td class="td3">作者</td>
+                   <td class="td4">时间</td>
+                 </tr>
+               </table>
+               <p>暂无圈子贴！</p>
+               <p>有问题要与其他用户讨论？<a href="">[发表帖子]</a></p>
+             </div>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="back_top">
+       <div>
+        <a href="#">
+         <span>顶部</span>
+         <i></i>
+        </a>
+      </div>
+    </div>
+
+	<!-- 猜你喜欢 -->
+    <div id="may_like">
+    	<span>根据浏览猜你喜欢</span>
+      <span class="fright changeA">换一批</span>
+      <ul>
+        <li><a href=""><img src="images/products/product_01_m.jpg" alt=""></a>
+         <p><a href="">卫新 护色洗衣液 2kg 袋装</a></p>
+         <a href="" class="blue_a">(已有41422人评价)</a><br>
+         <span>￥32.50</span>
+        </li>
+        <li><a href=""><img src="images/products/product_02_m.jpg" alt=""></a>
+        <p><a href="">威露士（Walch）2kg+2kg洗衣液（有氧洗）特惠双袋</a></p>
+         <a href="" class="blue_a">(已有44322人评价)</a><br>
+         <span>￥59.50</span></li>
+        <li><a href=""><img src="images/products/product_03_m.jpg" alt=""></a>
+        <p><a href="">奥妙净蓝全效高浓度洗衣液500g*(2+1)</a></p>
+         <a href="" class="blue_a">(已有34122人评价)</a><br>
+         <span>￥37.50</span></li>
+        <li><a href=""><img src="images/products/product_04_m.jpg" alt=""></a>
+        <p><a href="">威露士（Walch） 衣物除菌液（阳光清香）2.5L送1.5L </a></p>
+         <a href="" class="blue_a">(已有27422人评价)</a><br>
+         <span>￥79.50</span></li>
+        <li><a href=""><img src="images/products/product_05_m.jpg" alt=""></a>
+        <p><a href="">维达 抽纸 超韧3层130抽面巾纸*6包(小规格)</a></p>
+         <a href="" class="blue_a">(已有37422人评价)</a><br>
+         <span>￥41.50</span></li>
+        <li><a href=""><img src="images/products/product_06_m.jpg" alt=""></a>
+        <p><a href="">维达 卫生纸 蓝色经典3层140g卷纸*30卷</a></p>
+         <a href="" class="blue_a">(已有111422人评价)</a>
+         <span>￥62.50</span></li>
+      </ul>
+    </div>
+
+	<!-- 最近浏览 -->
+    <div id="viewed">
+    	<span>最近浏览</span>
+      <span class="fright">点击浏览更多</span>
+      <ul>
+        <li><img src="images/products/p001.jpg" alt=""><p>¥59.9</p></li>
+        <li><img src="images/products/p002.jpg" alt=""><p>¥59.9</p></li>
+        <li><img src="images/products/p003.jpg" alt=""><p>¥59.9</p></li>
+        <li><img src="images/products/p004.jpg" alt=""><p>¥59.9</p></li>
+        <li><img src="images/products/p005.jpg" alt=""><p>¥59.9</p></li>
+      </ul>
+    </div>
+
+	<!-- 底部导航 -->
+    <div id="footer_nav">
+      <div class="icon1 fleft"></div>
+      <div class="guide fleft">
+        <dl>
+          <dd>购物指南</dd>
+          <dt><a href="">购物流程</a></dt>
+          <dt><a href="">团购</a></dt>
+          <dt><a href="">常见问题</a></dt>
+          <dt><a href="">大家电</a></dt>
+          <dt><a href="">机票</a></dt>
+          <dt><a href="">联系客服</a></dt>
+        </dl>
+   </div>
+      <div class="icon2 fleft"></div>
+      <div class="guide fleft">
+        <dl>
+          <dd>配送方式</dd>
+          <dt><a href="">上门自提</a></dt>
+          <dt><a href="">211限时达</a></dt>
+          <dt><a href="">配送服务查询</a></dt>
+          <dt><a href="">配送费收取标准</a></dt>
+          <dt><a href="">海外配送</a></dt>
+        </dl>
+      </div>
+      <div class="icon3 fleft"></div>
+      <div class="guide fleft">
+        <dl>
+         <dd>支付方式</dd>
+          <dt><a href="">货到付款</a></dt>
+          <dt><a href="">在线支付</a></dt>
+          <dt><a href="">分期付款</a></dt>
+          <dt><a href="">邮局汇款</a></dt>
+          <dt><a href="">公司转账</a></dt>
+        </dl>
+      </div>
+      <div class="icon4 fleft"></div>
+      <div class="guide fleft">
+        <dl>
+         <dd>售后服务</dd>
+          <dt><a href="">售后政策</a></dt>
+          <dt><a href="">价格保护</a></dt>
+          <dt><a href="">退款说明</a></dt>
+          <dt><a href="">返修/退换货</a></dt>
+          <dt><a href="">取消订单</a></dt>
+        </dl>
+      </div>
+    	<div class="icon5 fleft"></div>
+      <div class="guide fleft">
+      <dl>
+        <dd>特色服务</dd>
+          <dt><a href="">夺宝岛</a></dt>
+          <dt><a href="">DIY装机</a></dt>
+          <dt><a href="">延保服务</a></dt>
+          <dt><a href="">京东E卡</a></dt>
+          <dt><a href="">节能补贴</a></dt>
+          <dt><a href="">京东通信</a></dt>
+        </dl>
+      </div>
+    </div>
+
+	<!-- 底部信息和版权 -->
+    <div id="footer">
+    	<p>
+        <a href="">关于我们</a>|
+        <a href="">联系我们</a>|
+        <a href="">人才招聘</a>|
+        <a href="">商家驻入</a>|
+        <a href="">广告服务</a>|
+        <a href="">手机京东</a>|
+        <a href="">友情链接</a>|
+        <a href="">联盟销售</a>|
+        <a href="">京东社区</a>|
+        <a href="">京东公益</a>
+      </p>
+      北京市公安局朝阳分局备案编号110105014669 | 京ICP证070359号 | 互联网药品信息服务资格证编号(京)-非经营性-2011-0034
+      <br>
+      音像制品经营许可证苏宿批005号 | 出版物经营许可证编号新出发(苏)批字第N-012号 | 互联网出版许可证编号新出网证(京)字150号
+      <br>
+      网络文化经营许可证京网文[2011]0168-061号 Copyright © 2004-2014 京东JD.com 版权所有 
+      <br>
+      京东旗下网站： <a href="">English Site</a> <a href="">拍拍网</a> <a href="">网银在线 </a>
+      <br>
+      <br>
+      <a href=""><img src="images/cx.jpg" alt=""></a>
+      <a href=""><img src="images/cy.jpg" alt=""></a>
+      <a href=""><img src="images/kx.jpg" alt=""></a>
+      <a href=""><img src="images/jy.jpg" alt=""></a>
+    </div>
+<script>
+	function getByClass(clsName, parent){
+ //定义函数getByClass()实现获取document或指定父元素下所有class为on的元素  
+       var oElements=parent?document.getElementById(parent):document;
+       var classS=[];
+       var oParent=oElements.getElementsByTagName("*");
+       var len=oParent.length;
+       for(var i=0;i<len;i++){
+           if(oParent[i].className==clsName){
+               classS.push(oParent[i]);
+           }
+       }
+       return classS;
+
+}
+function showHide(id,show){
+  var ent = document.getElementById(id);
+  ent.style.display = show;
+}
+// var top = document.getElementById("top");
+var top_nav_lis = getByClass("top_nav_li","top");
+var about_search = document.getElementById("about_search");
+var search_text = document.getElementById("search_text");
+getByClass("nav","main_nav")[0].onmouseover = function(){
+  this.getElementsByTagName("span")[0].className = "up";
+  document.getElementById("all_list").style.display = "block";
+}
+getByClass("nav","main_nav")[0].onmouseout = function(){
+  this.getElementsByTagName("span")[0].className = "";
+  document.getElementById("all_list").style.display = "none";
+}
+for(var i = 0;i<top_nav_lis.length;i++){
+	top_nav_lis[i].onmouseover = function(){
+		this.className += " on";
+	}
+	top_nav_lis[i].onmouseout = function(){
+		this.className = "top_nav_li";
+	}
+}
+
+search_text.onblur = function(){
+  about_search.style.display = "none";
+}
+// document.onclick = function(){
+//   about_search.style.display = "none";
+// }
+search_text.onclick = function(){
+  about_search.style.display = "block";
+}
+ // var area_list = getByClass("area_list","this_express");
+ //   var area_index = getByClass("area_index","this_express")[0].getElementsByTagName("a");
+ //   for(var i=0;i<area_index.length;i++){
+ //    area_index[i].index = i;
+ //    area_index[i].onclick = function(){
+ //      for(var i=0;i<area_index.length;i++){
+ //        area_index[i].className = "";
+ //      }
+ //      for(var i=0;i<area_list.length;i++){
+ //        area_list[i].style.display = "none";
+ //      }
+ //      this.className = "hover";
+ //      area_list[this.index].style.display = "block";
+ //    }
+ //   }
+
+   var suggest_nav = getByClass("suggest_nav","main")[0].getElementsByTagName("li");
+   var suggest_info = getByClass("suggest_info","main");
+   for(var i=0;i<suggest_nav.length;i++){
+    suggest_nav[i].index = i;
+    suggest_nav[i].onclick = function (){
+      for(var i=0;i<suggest_nav.length;i++){
+        suggest_nav[i].className = "";
+        suggest_info[i].style.display = "none";
+      }
+      this.className = "cur";
+      suggest_info[this.index].style.display = "block";
+    }
+   }
+
+   var lis = document.getElementById("rander").getElementsByTagName("ul")[0].getElementsByTagName("li");
+   var infors = getByClass("rander_info","rander");
+   for(var i = 0;i<lis.length;i++){
+   	lis[i].index = i;
+   	lis[i].onclick = function(){
+   		for(var  i=0;i<lis.length;i++){
+   			lis[i].className = "";
+   			infors[i].style.display = "none";
+   		}
+   		this.className = "on";
+   		infors[this.index].style.display = "block";
+   	}
+   }
+
+   // document.getElementById("m_appjd_draw").onmouseover = function(){
+   // 	this.getElementsByTagName("s")[0].className = "on";
+   // }
+   // document.getElementById("m_appjd_draw").onmouseout = function(){
+   // 	this.getElementsByTagName("s")[0].className = "";
+   // }
+
+   //实现图片放大镜
+  var controlBox = document.getElementById("control_box");
+      var box = document.getElementById("box");
+      var mid_box = document.getElementById("mid-pic");
+      var mid_img = document.getElementById("midImg");
+      var big_img = document.getElementById("bigImg");
+      var big_box = document.getElementById("big-pic");
+      var buttons =  document.getElementById("img_control").getElementsByTagName("button");
+      mid_img.src = loadPic(1,"mid");
+      big_img.src = loadPic(1,"big");
+
+
+
+
+      controlBox.onmouseover = function(){
+        box.style.display = "block";
+        big_box.style.display = "block";
+        moveBox(event);
+        }
+        controlBox.onmousemove = function(){
+        // box.style.display = "block";
+        moveBox(event);
+        }
+
+      controlBox.onmouseout = function(){
+        box.style.display = "none";
+        big_box.style.display = "none";
+      }
+
+      for(var i = 0;i<buttons.length;i++){
+        buttons[i].index = i;
+        buttons[i].onmouseover = function(){
+              for(var j = 0;j<buttons.length;j++){
+                buttons[j].style["border-color"] = "#fff";
+              }
+              mid_img.src = loadPic(this.index + 1,"mid");
+              big_img.src = loadPic(this.index + 1,"big");
+              this.style["border-color"] = "red";
+        }
+      }
+
+      function moveBox (event){
+        var e = event || window.event;
+        var scrollX = document.documentElement.scrollLeft || document.body.scrollLeft;
+                var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
+
+        var x = parseInt(e.pageX||scrollX + e.clientX);
+        var y = parseInt(e.pageY||scrollY + e.clientY);
+        var boxW = parseInt(box.offsetWidth);
+        var boxH = parseInt(box.offsetHeight);
+        var midW = parseInt(mid_box.offsetWidth);
+        var midH = parseInt(mid_box.offsetHeight);
+        var midX = parseInt(mid_box.scrollLeft) + 70;//这两个值是由最外层div的
+        var midY = parseInt(mid_box.scrollTop) + 216;//offsetTop和left得到的
+        // var bigW = parseInt(big_img.offsetWidth);
+        var boxX =parseInt(x-boxW/2-midX); 
+        var boxY =parseInt(y-boxH/2-midY); 
+                if(boxX > (midW - boxW)){
+                  boxX = midW - boxW;
+                }
+                if(boxY > (midH - boxH)){
+                  boxY = midH - boxH;
+                }
+                if (boxX < 0) {
+                  boxX = 0;
+                }
+                if(boxY < 0){
+                  boxY = 0;
+                }
+                var ccc = 800/350;
+                imgX = -ccc*boxX;
+                imgY = -ccc*boxY;
+
+
+        box.style.left = boxX + "px";
+        box.style.top  = boxY + "px";
+        big_img.style.left = imgX + "px";
+        big_img.style.top  = imgY + "px";
+      }
+
+      function loadPic(id,size){
+        var picId,picSrc;
+        if(id<10){
+          picId = "0" + id;
+        }else{
+          picId = "" + id;
+        }
+        if(size == "big"){
+                    return picSrc = "images/pic_b" + picId + ".jpg";
+        }
+        if(size == "mid"){
+          return picSrc = "images/pic_m" + picId + ".jpg";
+        }
+      }
+
+      //实现三级联动的地址选择
+
+     var tapNav = getByClass("area_index")[0].getElementsByTagName("a");
+      var tapContent  = getByClass("area_list");
+      var province_list = document.getElementById("province_list");
+      var city_list = document.getElementById("city_list");
+      var area_list = document.getElementById("area_list");
+
+
+      for(var i = 0;i<tapNav.length;i++){
+        tapNav[i].index = i;
+        tapNav[i].onclick = function(){
+        showCurrentTap(tapContent,this.index,tapNav); 
+      }
+    }
+
+      for(var i = 0;i<provinces.length;i++){
+                addAddressLis("province",provinces[i],province_list,"ProID","name"); 
+      }
+
+
+      // for(var i = 0;i<=3;i++){
+      //   var id = i+1;
+      //   document.getElementById("province" + id).onclick = function(){
+      //     var idString = this.id;
+      //     var idNum = idString.substring(8);
+      //     city_list.innerHTML = "";
+      //     var areaLis = [];
+      //     for(var j = 0;j<areas.length;j++){
+      //       if(areas[j].CityID == idNum){
+      //         var li = addAddressLis("areas",areas[j],city_list,"ID","DisName",true);
+      //         areaLis.push(li);
+      //       }
+      //     }
+      //     showCurrentTap(tapContent,1,tapNav);
+      //     tapNav[0].innerHTML = this.innerHTML;    
+      //   }
+      // }
+
+      for(var i = 0;i<provinces.length;i++){
+        var id = i+1;
+        document.getElementById("province" + id).onclick = function(){
+          var idString = this.id;
+                    var idNum = idString.substring(8);
+          city_list.innerHTML = "";
+          var cityLis = [];
+          for(var j = 0;j<citys.length;j++){
+            if(citys[j].ProID == idNum){
+              li=addAddressLis("city",citys[j],city_list,"CityID","name",true);
+              cityLis.push(li);
+            }
+            
+          }
+          showCurrentTap(tapContent,1,tapNav);
+          tapNav[0].innerHTML = this.innerHTML; 
+                    var areaLis = [];
+          for(var k = 0;k<cityLis.length;k++){
+            cityLis[k].index = k;
+            cityLis[k].onclick = function(){
+              var lidString = this.id;
+                            var lidNum = lidString.substring(4);
+                            area_list.innerHTML = "";
+                            for(var j = 0;j<areas.length;j++){
+                                 if(areas[j].CityID == lidNum){
+                                  ali = addAddressLis("area",areas[j],area_list,"Id","DisName",true);
+                                  areaLis.push(ali);
+                                }
+                            }
+                           showCurrentTap(tapContent,2,tapNav);
+                    tapNav[1].innerHTML = this.innerHTML;
+
+                    for(var h = 0;h<areaLis.length;h++){
+                      areaLis[h].onclick = function(){
+                        tapNav[2].innerHTML = this.innerHTML;
+                        addresshtml = tapNav[0].innerHTML + tapNav[1].innerHTML + tapNav[2].innerHTML;
+                        document.getElementById("choose_address").innerHTML = addresshtml ;
+                        document.getElementById("address_info").style.display = "none";
+                      }
+                    } 
+            }
+          }
+
+        }
+      }
+          function showCurrentTap(obj,id,thisObj){
+      for(var j = 0;j<obj.length;j++){
+      obj[j].style.display = "none";
+      thisObj[j].className = "";
+      }
+      thisObj[id].className = "hover";
+      obj[id].style.display = "block";
+    }
+     function addAddressLis(idPrev,obj,addressContent,idType,nameType,rreturn){
+      var li = document.createElement("li");
+    li.id = idPrev + obj[idType];
+    li.innerHTML = obj[nameType];
+    if(obj[nameType].length > 5 && obj[nameType].length < 8){
+      li.className = "long_area";
+    }else if(obj[nameType].length > 8){
+      li.className = "longer_area";
+    }
+    addressContent.appendChild(li);
+    if(rreturn){
+      return li;
+    }
+     }
+
+     //实现选择颜色的切换选定
+     var ColorTap = document.getElementById("chose_color").getElementsByTagName("a");
+     for(var i = 0;i<ColorTap.length;i++){
+      ColorTap[i].onclick = function(){
+        for(var j = 0;j<ColorTap.length;j++){
+          ColorTap[j].className = "clearfix";
+        }
+        this.className += " on";
+      }
+     }
+     // 实现购买数量的加减
+     var choose_num = document.getElementById("choose_num");
+
+     document.getElementById("make_add").onclick = function(){
+      choose_num.value = parseInt(choose_num.value) + 1;
+     }
+     document.getElementById("make_reduce").onclick = function(){
+      if(parseInt(choose_num.value)<1){
+        return;
+      }
+      choose_num.value = parseInt(choose_num.value) - 1;
+     }
+
+     //实现推荐商品的展示切换
+     var suggest_tap = getByClass("suggest_tap clearfix")[0].getElementsByTagName("li");
+     var suggest_content = getByClass("offer")[0].getElementsByTagName("li");
+     suggest_content[suggest_content.length-1].getElementsByTagName("s")[0].className = "last";
+
+     
+     for(var i = 0;i<suggest_tap.length;i++){
+      suggest_tap[i].index = i ;
+      suggest_tap[i].onclick = function(){
+        for(var j = 0;j<suggest_tap.length;j++){
+          suggest_tap[j].className = "";
+        }
+        this.className = "on";
+        suggestShow(this.id);
+      }
+     }
+     function suggestShow(clsName){
+      var showLis = [];
+      for(var i = 0;i<suggest_content.length;i++){
+        if(clsName == "all_offer"){
+           suggest_content[i].style.display = "block";
+           showLis.push(suggest_content[i]);
+        }else{
+          if(suggest_content[i].className == clsName){
+          suggest_content[i].style.display = "block";
+          showLis.push(suggest_content[i]);
+        }else{
+          suggest_content[i].style.display = "none";
+        }
+        }
+        suggest_content[i].getElementsByTagName("s")[0].className = "";
+      }
+      showLis[showLis.length-1].getElementsByTagName("s")[0].className = "last";
+     }
+
+     // 实现隐藏和显示所有商品的功能；
+     var allList = getByClass("all_list")[0].getElementsByTagName("li");
+     var listDetail = getByClass("list_detail");
+
+     for(var i = 0;i<allList.length;i++){
+      allList[i].index = i;
+      allList[i].onmouseover = function(){
+        for(var j = 0;j<allList.length;j++){
+          allList[j].className = "";
+          listDetail[j].style.display = "none";
+        }
+        this.className = "on";
+        listDetail[this.index].style.display = "block";
+      }
+      // allList[i].onmouseout = function(){
+      //   // for(var j = 0;j<allList.length;j++){
+      //   //   allList[]
+      //   // }
+      //   this.className = "";
+      //   listDetail[this.index].style.display = "none";
+      // }
+     }
+
+     // 实现商品介绍，产品参数，评论的切换显示
+     var mainShow = getByClass("main_show","main_body");
+     var mainTap = getByClass("main_tap clearfix","main_body")[0].getElementsByTagName("li");
+     function mainShowHide(index1,index2){
+      for(var j = 0;j<mainTap.length;j++){
+        mainTap[j].className = "";
+      }
+        for(var i = 0;i<mainShow.length;i++){
+          mainShow[i].style.display = "none";
+        }
+        mainTap[index1].className = "on";
+        // document.body.scrollTop = 930;
+        if(index2 <4){
+        mainShow[index2].style.display = "block";
+        getByClass("serve-agree","main_body")[0].style.display = "block";
+        }else{
+          getByClass("serve-agree","main_body")[0].style.display = "none";
+        }
+        
+     }
+     document.getElementById("detail_info_draw").onclick = function(){
+        mainShowHide(0,0);
+     }
+     document.getElementById("spec_para_draw").onclick = function(){
+        mainShowHide(1,1);
+     }
+     document.getElementById("packing_list_draw").onclick = function(){
+        mainShowHide(2,2);
+     }
+     document.getElementById("after_sale_draw").onclick = function(){
+        mainShowHide(4,3);
+     }
+     document.getElementById("comment_draw").onclick = function(){
+        mainShowHide(3,4);
+     }
+
+     //实现评论列表的鼠标移入，赞和回复的出现
+     var d = getByClass("comment_item_main clearfix","all_comment");
+     var a = d.concat(getByClass("comment_item_main clearfix","good_comment"));
+     var b = a.concat(getByClass("comment_item_main clearfix","middle_comment"));
+     var commentItem = b.concat(getByClass("comment_item_main clearfix","bad_comment"));
+     for(var i = 0;i<commentItem.length;i++){
+      commentItem[i].onmouseover = function(){
+        this.className += " on";
+      }
+      commentItem[i].onmouseout = function(){
+        this.className = "comment_item_main clearfix";
+      }
+     }
+
+     //实现评论中点击图片出现图片详情
+     var ratate = 0;
+     var hideImg = document.getElementById("hide_img_comm").getElementsByTagName("img");
+     var showImg = getByClass("show_img_comm","show_img_comm");
+     var imgCommCon = document.getElementById("img_comm_container").getElementsByTagName("img");
+     for(var i = 0;i<hideImg.length;i++){
+      hideImg[i].index = i;
+      showImg[i].index = i;
+      hideImg[i].onclick = function(){
+        document.getElementById("hide_img_comm").style.display = "none";
+        document.getElementById("show_img_comm").style.display = "block";
+        showImgComm(this.index);
+        showImgBorder(this.index);
+        ratate = 0;
+        imgTurn(ratate);
+      }
+      showImg[i].onclick = function(){
+        showImgBorder(this.index)
+        showImgComm(this.index);
+        ratate = 0;
+        imgTurn(ratate);
+      }
+     }
+     function showImgComm(id){
+      for(var i = 0;i<imgCommCon.length;i++){
+        imgCommCon[i].style.display = "none"
+      }
+      imgCommCon[id].style.display = "block";
+     }
+     function showImgBorder(id){
+      for(var j = 0;j<showImg.length;j++){
+          showImg[j].style["border-color"] = "#fff";
+        }
+        showImg[id].style["border-color"] = "red";
+     }
+     function imgTurn(direction){
+      for(var i = 0;i<imgCommCon.length;i++){
+        imgCommCon[i].style.transform = "rotate(" + ratate + "deg)";
+      }
+     }
+     
+     document.getElementById("close_img_comm").onclick = function(){
+        document.getElementById("hide_img_comm").style.display = "block";
+        document.getElementById("show_img_comm").style.display = "none";
+     }
+     document.getElementById("left_img_comm").onclick = function(){
+         ratate -= 90;
+         imgTurn(ratate);
+     }
+     document.getElementById("right_img_comm").onclick = function(){
+         ratate += 90;
+         imgTurn(ratate);
+     }
+     for(var i = 0;i<imgCommCon.length;i++){
+        imgCommCon[i].onclick = function(){
+         document.getElementById("hide_img_comm").style.display = "block";
+         document.getElementById("show_img_comm").style.display = "none";
+        }
+      }
+
+      //实现晒图的一系列功能
+      var imgUl = document.getElementById("img_comment").getElementsByTagName("ul")[0];
+      var prevCur = document.getElementById("prev_cur");
+      var nextCur = document.getElementById("next_cur");
+      var imgMain = document.getElementById("img_comment_container").getElementsByTagName("img")[0];
+      var imgLi = document.getElementById("img_comment").getElementsByTagName("li");
+      var id = 0;
+
+      prevCur.onclick = function(){
+        if(parseInt(imgUl.offsetLeft)<0){
+          imgUl.style.left = 0 + "px";
+        }
+        imgMain.src = "images/imgcom_b1.jpg";
+        addImgClass(0);
+      }
+      nextCur.onclick = function(){
+        if(parseInt(imgUl.offsetLeft)>=0){
+          imgUl.style.left =  -900 + "px";
+        }
+        imgMain.src = "images/imgcom_b11.jpg";
+        addImgClass(10);
+      }
+      for(var i = 0;i<imgLi.length;i++){
+        imgLi[i].index = i;
+        imgLi[i].onclick = function(){
+          addImgClass(this.index);
+        }
+      }
+      function addImgClass (idd){
+        for(var i = 0;i<imgLi.length;i++){
+          imgLi[i].className = "";
+        }
+        id = idd;
+        imgLi[id].className = "on";
+        imgMain.src = "images/imgcom_b" + (id + 1) + ".jpg";
+      }
+      document.getElementById("left_page").onclick = function(){
+        id -= 1;
+        if(id < 0){
+          id = 0;
+          return;
+        }
+        addImgClass(id);
+        if(id<10){
+          imgUl.style.left =  0 + "px";
+        }
+      }
+      document.getElementById("right_page").onclick = function(){
+        id += 1;
+        if(id > 11){
+          id = 11;
+          return;
+        }
+        addImgClass(id);
+        if(id>9){
+          imgUl.style.left =  -900 + "px";
+        }
+      }
+
+      //实现各种评论的切换显示
+      var commentTap = document.getElementById("comment_tap").getElementsByTagName("a");
+      var commentInfo = getByClass("comment_info");
+      for(var i = 0;i<commentTap.length;i++){
+         commentTap[i].index = i;
+         commentTap[i].onclick = function(){
+          for(var j = 0;j<commentTap.length;j++){
+             commentTap[j].className = "";
+             commentInfo[j].style.display = "none";
+            }
+            this.className = "on";
+            commentInfo[this.index].style.display = "block";
+         }
+      }
+
+      //   dfdsfsdf
+      var MainFixDraw = document.getElementById("main_fixed_draw");
+      var DetailRight = document.getElementById("detail_right");
+      var detailRightLeft = DetailRight.offsetLeft;
+      var imgBeginScroll = document.getElementById("img_detail").offsetTop;
+      var imgDetailH = document.getElementById("img_detail").offsetHeight;
+      var beginScoll = document.getElementById("main_fixed_draw").offsetTop;
+      var maxImgScroll = imgBeginScroll + imgDetailH;
+      var index1H = document.getElementById("product_infomation").offsetTop-200;
+      var index2H = document.getElementById("selling_point").offsetTop-200;
+      var index3H = document.getElementById("product_Exhibition").offsetTop-200;
+      var index4H = document.getElementById("kindly_remind").offsetTop-200;
+      var index5H = document.getElementById("brand_intro").offsetTop-200;
+
+      
+      window.onscroll = function(){
+        var scrollH = document.body.scrollTop;
+        var maxScroll = document.getElementById("may_like").offsetTop - 500;
+        if(scrollH > beginScoll && scrollH < maxScroll){
+         MainFixDraw.onclick = function(){
+          document.body.scrollTop = beginScoll;
+         }
+        MainFixDraw.style.position = "fixed";
+        MainFixDraw.style.top = 0 + "px";
+      }else{
+        MainFixDraw.onclick = function(){
+          document.body.scrollTop = scrollH;
+         }
+        MainFixDraw.style.position = "";
+      }
+
+      if(scrollH>imgBeginScroll&&scrollH<maxImgScroll){
+        DetailRight.style.position = "fixed";
+        DetailRight.style.top = 35+"px";
+        DetailRight.style.left = detailRightLeft + "px";
+        if(scrollH>index1H&&scrollH<index2H){
+          scrollChange(0);
+        }else if(scrollH>index2H&&scrollH<index3H){
+          scrollChange(1);
+        }else if(scrollH>index3H&&scrollH<index4H){
+          scrollChange(2);
+        }else if(scrollH>index4H&&scrollH<index5H){
+          scrollChange(3);
+        }else if(scrollH>index5H){
+          scrollChange(4);
+        }
+      }else{
+        DetailRight.style.position = "";
+      }
+      }
+
+      //sssssssss
+      var scrollLi = DetailRight.getElementsByTagName("li");
+      for(var i = 0;i<scrollLi.length;i++){
+        scrollLi[i].index = i;
+        scrollLi[i].onclick = function(){
+           scrollChange(this.index);
+        }
+      }
+      function scrollChange(id){
+        for(var j = 0;j<scrollLi.length;j++){
+            scrollLi[j].className = "";
+          }
+          scrollLi[id].className = "on";
+      }
+
+      //.taolun_item p a
+      var zixunTap = document.getElementById("zixun_tap").getElementsByTagName("li");
+      var taolunTap = document.getElementById("taolun_tap").getElementsByTagName("li");
+      var zixunCon = getByClass("zixun_item","zixun");
+      var taolunCon = getByClass("taolun_item","taolun");
+      for(var i = 0;i<zixunTap.length;i++){
+        zixunTap[i].index = i;
+        zixunTap[i].onclick = function(){
+           showHideZT(zixunTap,zixunCon,this.index);
+        }
+      }
+      for(var i = 0;i<taolunTap.length;i++){
+        taolunTap[i].index = i;
+        taolunTap[i].onclick = function(){
+           showHideZT(taolunTap,taolunCon,this.index);
+        }
+      }
+      function showHideZT(objTap,objCon,id){
+        for(var j = 0;j<objTap.length;j++){
+          objTap[j].className = "";
+          objCon[j].style.display = "none";
+        }
+        objTap[id].className = "on";
+        objCon[id].style.display = "block";
+      }
+
+      //adsdsdsds
+      document.getElementById("back_top").onmouseover = function(){
+           this.getElementsByTagName("div")[0].className = "on";
+      }
+      document.getElementById("back_top").onmouseout = function(){
+           this.getElementsByTagName("div")[0].className = "";
+      }
+</script>
+</body>
+</html>

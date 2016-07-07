@@ -4002,7 +4002,8 @@
       <a href=""><img src="images/jy.jpg" alt=""></a>
     </div>
 <script>
-	function getByClass(clsName, parent){
+window.onload = function(){
+		function getByClass(clsName, parent){
  //定义函数getByClass()实现获取document或指定父元素下所有class为on的元素  
        var oElements=parent?document.getElementById(parent):document;
        var classS=[];
@@ -4667,6 +4668,7 @@ search_text.onclick = function(){
       document.getElementById("back_top").onmouseout = function(){
            this.getElementsByTagName("div")[0].className = "";
       }
+}
 </script>
 </body>
 </html>

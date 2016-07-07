@@ -4002,8 +4002,7 @@
       <a href=""><img src="images/jy.jpg" alt=""></a>
     </div>
 <script>
-window.onload = function(){
-		function getByClass(clsName, parent){
+	function getByClass(clsName, parent){
  //定义函数getByClass()实现获取document或指定父元素下所有class为on的元素  
        var oElements=parent?document.getElementById(parent):document;
        var classS=[];
@@ -4017,10 +4016,14 @@ window.onload = function(){
        return classS;
 
 }
+
 function showHide(id,show){
   var ent = document.getElementById(id);
   ent.style.display = show;
 }
+window.onload = function(){
+	
+
 // var top = document.getElementById("top");
 var top_nav_lis = getByClass("top_nav_li","top");
 var about_search = document.getElementById("about_search");
